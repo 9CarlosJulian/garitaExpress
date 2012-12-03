@@ -356,110 +356,109 @@ body {
 				}
 
 /*COMPRAS*/
-		#costo {
-			margin-bottom: 100px;
-			}
+#costo {
+	margin-bottom: 100px;
+	}
 
-				#info-wp ul {
-					text-align: center;
-					margin-bottom: 30px;
-				}
-				#info-wp li {
-					display:inline-block;
-					margin: 0 10px 0 10px;
+		#info-wp ul {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		#info-wp li {
+			display:inline-block;
+			margin: 0 10px 0 10px;
 
-				}
-				#info-wp li.flecha {
-					position: relative;
-					top: -25px;
-				}
-				#info-wp li.paso {
-					text-align: center;
-				}
-				#info-wp li h2 {
-					text-transform: uppercase;
-					
-				}	
-			#info2 #info-wp{
-				padding-top: 30px;
-			}
-			#costo-wp {
-				width: 800px;
-				margin: 0 auto;
-				overflow: hidden;
-			}
-			#costo-wp h1 {
-				text-align: center;
-				text-transform: uppercase;
-				color: #EC1C24;
-				font-size: 13pt;
-			}
-				#costo-izq {
-					float: left;
-				}
-				#costo-izq li.tabla {
-					display: inline-block;
-					margin: 0px -3px 0px 0px;
-				}
-				#costo-izq ul li ul li{
-					padding: 4px 0px 4px 25px;
-				}
-				#costo-izq ul.precio, #costo-izq ul.comision {
-					width: 140px;
-				}
-				#costo-izq li span {
-					color: #6B6B6B;
-					text-transform: uppercase;
-					font: normal 14px "gothambook";
-				}
-				#costo-izq li.gray {
-					background-color: #E2E2E2;
-				}
-				#costo-der {
-					float:right;
-				}
-/*Catalogo*/
-	#info-wp ul.catalogo{
+		}
+		#info-wp li.flecha {
+			position: relative;
+			top: -25px;
+		}
+		#info-wp li.paso {
+			text-align: center;
+		}
+		#info-wp li h2 {
+			text-transform: uppercase;
+			
+		}	
+	#info2 #info-wp{
+		padding-top: 30px;
+	}
+	#costo-wp {
+		width: 800px;
 		margin: 0 auto;
-		width: 860px;
+		overflow: hidden;
+	}
+	#costo-wp h1 {
+		text-align: center;
+		text-transform: uppercase;
+		color: #EC1C24;
+		font-size: 13pt;
+	}
+		#costo-izq {
+			float: left;
+		}
+		#costo-izq li.tabla {
+			display: inline-block;
+			margin: 0px -3px 0px 0px;
+		}
+		#costo-izq ul li ul li{
+			padding: 4px 0px 4px 25px;
+		}
+		#costo-izq ul.precio, #costo-izq ul.comision {
+			width: 140px;
+		}
+		#costo-izq li span {
+			color: #6B6B6B;
+			text-transform: uppercase;
+			font: normal 14px "gothambook";
+		}
+		#costo-izq li.gray {
+			background-color: #E2E2E2;
+		}
+		#costo-der {
+			float:right;
+		}
+/*Catalogo*/
+#info-wp ul.catalogo{
+	margin: 0 auto;
+	width: 860px;
 
 	}
-		#info-wp ul.catalogo li {
-			overflow: hidden;
+	#info-wp ul.catalogo li {
+		overflow: hidden;
 		}
-			#info-wp ul.catalogo li.first {
-			margin-bottom: 15px;
+		#info-wp ul.catalogo li.first {
+		margin-bottom: 15px;
 		}
-		#info-wp ul.catalogo li.second {
-			margin-bottom: 15px;
+	#info-wp ul.catalogo li.second {
+		margin-bottom: 15px;
 		}
-			#info-wp ul.catalogo img {
-				margin-bottom: 10px;
+		#info-wp ul.catalogo img {
+			margin-bottom: 10px;
 			}
-			#info-wp ul.catalogo li a {
-				text-align: center;
-				color: #EC1C24;
-				text-transform: uppercase;
-				font: normal 12px "gothambook";
+		#info-wp ul.catalogo li a {
+			text-align: center;
+			color: #EC1C24;
+			text-transform: uppercase;
+			font: normal 12px "gothambook";
 			}
-/* Ropa y Accesorios */
+/* Ropa	 y Accesorios */
 	#info-wp #categoria {
 		float: left;
 		width: 320px;
 		text-align: center;
-		
-	}
+		}
 	#info-wp #lista {
 		float: right;
-	}
+		}
 		#info-wp #lista ul.tiendas li {
 			display: list-item;
 			list-style: none;
 			text-align: left;
-		}
+			}
 		#info-wp #lista a {
 			color: #6B6B6B;
-		}
+			}
 		#info-wp #lista a:hover {
 			color: #3F66AF;
-		}
+			}
