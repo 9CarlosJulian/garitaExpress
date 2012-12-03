@@ -463,3 +463,25 @@ body {
 		#info-wp #lista a:hover {
 			color: #3F66AF;
 		}
+/* Ganga Express */
+	#info2 #info-wp {
+		text-align: center;
+	}
+	#info2 #ganga {
+		margin: 0 auto;
+		width: 700px;
+	}
+		#info2 #info-wp img.ganga {
+			margin-bottom: 15px;
+		}
+		#info2 #info-wp p span.asterisco {
+			color: #EC1C24;
+			font-family: "gothamBold"
+		}
+		#info2 #info-wp a.ganga {
+			text-transform: uppercase;
+			color: #3F66AF;
+			float: right;
+			font-family: "gothamBold";
+			margin-bottom: 50px;
+		}
