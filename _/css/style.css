@@ -359,64 +359,61 @@ body {
 #costo {
 	margin-bottom: 100px;
 	}
-
-		#info-wp ul {
-			text-align: center;
-			margin-bottom: 30px;
-		}
-		#info-wp li {
-			display:inline-block;
-			margin: 0 10px 0 10px;
-
-		}
-		#info-wp li.flecha {
-			position: relative;
-			top: -25px;
-		}
-		#info-wp li.paso {
-			text-align: center;
-		}
-		#info-wp li h2 {
-			text-transform: uppercase;
-			
-		}	
-	#info2 #info-wp{
-		padding-top: 30px;
-	}
-	#costo-wp {
-		width: 800px;
-		margin: 0 auto;
-		overflow: hidden;
-	}
-	#costo-wp h1 {
+	#info-wp ul {
 		text-align: center;
+		margin-bottom: 30px;
+		}
+	#info-wp li {
+		display:inline-block;
+		margin: 0 10px 0 10px;
+		}
+	#info-wp li.flecha {
+		position: relative;
+		top: -25px;
+		}
+	#info-wp li.paso {
+		text-align: center;
+		}
+	#info-wp li h2 {
 		text-transform: uppercase;
-		color: #EC1C24;
-		font-size: 13pt;
+		}	
+#info2 #info-wp{
+	padding-top: 30px;
 	}
-		#costo-izq {
-			float: left;
+#costo-wp {
+	width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+#costo-wp h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #EC1C24;
+	font-size: 13pt;
+	}
+	#costo-izq {
+		float: left;
 		}
-		#costo-izq li.tabla {
-			display: inline-block;
-			margin: 0px -3px 0px 0px;
+	#costo-izq li.tabla {
+		display: inline-block;
+		margin: 0px -3px 0px 0px;
 		}
-		#costo-izq ul li ul li{
-			padding: 4px 0px 4px 25px;
+	#costo-izq ul li ul li{
+		padding: 4px 0px 4px 25px;
 		}
-		#costo-izq ul.precio, #costo-izq ul.comision {
-			width: 140px;
+	#costo-izq ul.precio, #costo-izq ul.comision {
+		width: 140px;
 		}
-		#costo-izq li span {
-			color: #6B6B6B;
-			text-transform: uppercase;
-			font: normal 14px "gothambook";
+	#costo-izq li span {
+		color: #6B6B6B;
+		text-transform: uppercase;
+		font: normal 14px "gothambook";
 		}
-		#costo-izq li.gray {
-			background-color: #E2E2E2;
+	#costo-izq li.gray {
+		background-color: #E2E2E2;
 		}
-		#costo-der {
-			float:right;
+	#costo-der {
+		float:right;
 		}
 /*Catalogo*/
 #info-wp ul.catalogo{
@@ -461,4 +458,26 @@ body {
 			}
 		#info-wp #lista a:hover {
 			color: #3F66AF;
+			}
+/* Ganga Express */
+	#info2 #info-wp {
+		text-align: center;
+		}
+	#info2 #ganga {
+		margin: 0 auto;
+		width: 700px;
+		}
+		#info2 #info-wp img.ganga {
+			margin-bottom: 15px;
+			}
+		#info2 #info-wp p span.asterisco {
+			color: #EC1C24;
+			font-family: "gothamBold"
+			}
+		#info2 #info-wp a.ganga {
+			text-transform: uppercase;
+			color: #3F66AF;
+			float: right;
+			font-family: "gothamBold";
+			margin-bottom: 50px;
 			}
