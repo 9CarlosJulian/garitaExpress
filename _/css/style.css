@@ -330,7 +330,7 @@ body {
 				color: #999;
 				}
 			#faq-wp dt span.icon {
-				background: url('../images/bullets.png') no-repeat;
+				background: url('../img/bullets.png') no-repeat;
 				height: 12px;
 				left: 0;
 				position: absolute;
@@ -389,32 +389,66 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: #EC1C24;
-	font-size: 13pt;
+	font: normal 13pt "gothambook";
+	padding: 0px 0px 20px 0px;
 	}
+.division-title {
+	background: url('../img/division.png') no-repeat center;
+	width: 940px;
+	height: 53px;
+	margin: 15px auto 0 auto;
+	padding: 5px 0px;
+	}	
+	.division-title h2 {
+		text-align: center;
+		text-transform: uppercase;
+		color: #EC1C24;
+		font: normal 20px "gothambold";
+		position: relative;
+		top: 18px;
+		line-height: 15px;
+		}	
 	#costo-izq {
 		float: left;
 		}
-	#costo-izq li.tabla {
-		display: inline-block;
-		margin: 0px -3px 0px 0px;
-		}
-	#costo-izq ul li ul li{
-		padding: 4px 0px 4px 25px;
-		}
+		#costo-izq li.tabla {
+			display: inline-block;
+			margin: 0px -3px 0px 0px;
+			}
+			#costo-izq ul li ul li{
+				padding: 5px 0px 0px 25px;
+				height: 22px;
+				overflow: hidden;
+				}
+				
 	#costo-izq ul.precio, #costo-izq ul.comision {
 		width: 140px;
+		border-right: 1px solid #e2e2e2;
+		  -webkit-box-shadow: 2px 0px 2px -1px #e8e8e8;
+		          box-shadow: 2px 0px 2px -1px #e8e8e8;
+		overflow: hidden;
 		}
+	#costo-izq ul.comision {
+		width:  120px;
+		}	
+		ul.tabla-vacia {
+			position: relative;
+			top: 10px;
+			width: 15px;
+			overflow: hidden;
+			}
 	#costo-izq li span {
 		color: #6B6B6B;
 		text-transform: uppercase;
 		font: normal 14px "gothambook";
 		}
 	#costo-izq li.gray {
-		background-color: #E2E2E2;
+		background-color: #E8E8E8;
 		}
 	#costo-der {
 		float:right;
 		}
+		
 /*Catalogo*/
 #info-wp ul.catalogo{
 	margin: 0 auto;
