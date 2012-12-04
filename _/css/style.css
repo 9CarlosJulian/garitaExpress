@@ -357,7 +357,7 @@ body {
 
 /*COMPRAS*/
 #costo {
-	margin-bottom: 100px;
+	margin-bottom: 30px;
 	}
 	#info-wp ul {
 		text-align: center;
@@ -447,6 +447,7 @@ body {
 		}
 	#costo-der {
 		float:right;
+		margin-top:30px;
 		}
 		
 /*Catalogo*/
@@ -497,7 +498,7 @@ body {
 	#info2 #info-wp {
 		text-align: center;
 		}
-	#info2 #ganga {
+	#info2 #texto-700 {
 		margin: 0 auto;
 		width: 700px;
 		}
@@ -508,10 +509,16 @@ body {
 			color: #EC1C24;
 			font-family: "gothamBold"
 			}
-		#info2 #info-wp a.ganga {
+		#info2 #info-wp a.ganga, #costo a.ganga {
 			text-transform: uppercase;
 			color: #3F66AF;
 			float: right;
 			font-family: "gothamBold";
 			margin-bottom: 50px;
 			}
+/* Empresas */
+#costo-wp ul#info-emp li {
+	list-style: disc;
+	list-style-position: inside;
+	padding-bottom: 3px;
+}
