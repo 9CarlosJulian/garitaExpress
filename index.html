@@ -14,7 +14,33 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="_/css/coda-slider.css">
+	<script src="_/js/jquery-1.7.2.min.js"></script>
+    <script src="_/js/jquery-ui-1.8.20.custom.min.js"></script>
 
+    <!-- This of course is required. The full version (not .min) is also included in the js directory -->
+    <script src="_/js/jquery.coda-slider-3.0.min.js"></script>
+     <script>
+    $(function(){
+
+      /* Here is the slider using default settings */
+      
+      /* If you want to adjust the settings, you set an option
+         as follows:
+*/
+          $('#slider-id').codaSlider({
+            autoSlide:true,
+            autoSlideInterval: 3000,
+            dynamicArrows: false,
+            dynamicTabsPosition: "bottom",
+            dynamicTabsAlign: "left",
+            autoHeight:false
+          });
+      
+      
+    });
+
+    </script> 
 </head>
 
 <body>
@@ -48,31 +74,52 @@
 	</div><!-- end of #menu-wp -->
 </div><!-- end of #menu -->
 <div id="contenido">
-	<div id="titulo">
-		<div id="shadow-up"></div>
-		<div id="titulo-wp">
-				<h1>Compras</h1>
-		</div><!-- end of #titulo-wp -->
-		<div id="shadow-down"></div>
-	</div> <!-- end of #titulo -->
-	<div id="info2" >
+<div id="slider">
+	<div id="slider-wp">
+	<div class="coda-slider"  id="slider-id">
+	      <div>
+	        <h2 class="title"></h2>
+	        <img src="_/img/slide-1.png"/>
+	      </div>
+	      <div>
+	        <h2 class="title"></h2>
+	        <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+	      </div>
+	      <div>
+	        <h2 class="title"></h2>
+	        <p>Cras luctus fringilla odio vel hendrerit. Cras pulvinar auctor sollicitudin. Sed lacus quam, sodales sit amet feugiat sit amet, viverra nec augue. Sed enim ipsum, malesuada quis blandit vel, posuere eget erat. Sed a arcu justo. Integer ultricies, nunc at lobortis facilisis, ligula lacus vestibulum quam, id tincidunt sapien arcu in velit. Vestibulum consequat augue et turpis condimentum mollis sed vitae metus. Morbi leo libero, tincidunt lobortis fermentum eget, rhoncus vel sem. Morbi varius viverra velit vel tempus. Morbi enim turpis, facilisis vel volutpat at, condimentum quis erat. Morbi auctor rutrum libero sed placerat. Etiam ipsum velit, eleifend in vehicula eu, tristique a ipsum. Donec vitae quam vel diam iaculis bibendum eget ut diam. Fusce quis interdum diam. Ut urna justo, dapibus a tempus sit amet, bibendum at lectus. Sed venenatis molestie commodo.</p>
+	      </div>
+	      
+	    </div>
+	</div><!-- end of #slder-wp -->
+</div><!-- end of #slder -->
+	<div id="info">
 		<div id="info-wp">
-				<div id="texto-700">
-					<img src="http://dummyimage.com/700x220/d3cfcf/000000.png&text=GANGA" class="ganga" height="220px" width="700px"/></br>
-					<p>
-					Bacon ipsum dolor sit amet chicken ham hock filet mignon jerky sirloin chuck tri-tip. Short ribs beef ribs jerky drumstick kielbasa sirloin tri-tip. Short ribs tongue filet mignon meatball shank pancetta turducken jerky ground round. Rump turkey frankfurter jowl swine, sirloin ham hock fatback short ribs bresaola tri-tip jerky chicken. Beef ribs filet mignon cow, beef pork tenderloin meatball ground round brisket. Shoulder t-bone short loin, tongue ham hock doner frankfurter kielbasa drumstick filet mignon salami corned beef.
-					</br>
-					</br>
-					Bacon ipsum dolor sit amet chicken ham hock filet mignon jerky sirloin chuck tri-tip. Short ribs beef ribs jerky drumstick kielbasa sirloin tri-tip. Short ribs tongue filet mignon meatball shank pancetta turducken jerky ground round. Rump turkey frankfurter jowl swine, sirloin ham hock fatback short ribs bresaola tri-tip jerky chicken. 
-					</br>
-					</br>
-					<span class="asterisco">*</span>Beef ribs filet mignon cow, beef pork tenderloin meatball ground round brisket. Shoulder t-bone short loin, tongue ham hock doner frankfurter.
-					</p>
-					<a class="ganga" href="">Comprar ></a>
-				</div> <!-- end of #texto-700 -->
-		</div> <!-- end of #info-wp -->
+			
+			<div id="compramos">
+				<div id="tit-compramos">
+					<h1>Compramos por ti</h1>
+				</div> <!-- end of #tit-compramos -->
+				<img src="_/img/proceso.png" height="140px" width="426px"/>
+				<ul>
+					<li>Realizamos tu pedido</li>
+					<li>Realizamos la compra</li>
+					<li>Recibe en tu hogar</li>
+				</ul>
+				<p>Bacon ipsum dolor sit amet cow frankfurter pork loin pig jerky doner beef ham hock porkz chop.</p>
+			</div> <!-- end of #compramos -->
+			<div id="ganga-dia">
+				<div id="tit-ganga">
+					<h1>Ganga del dia</h1>
+				</div> <!-- end of #tit-ganga -->
+			</div><!-- end of #ganga-dia -->
+			<div id="calculadora">
+				<div id="tit-calc">
+					<h1>Calcula tu envio</h1>
+				</div> <!-- end of #tit-ganga -->
+			</div><!-- end of #ganga-dia -->
+		</div><!-- end of #info-wp -->
 	</div><!-- end of #info -->
-	
 </div><!-- end of #contenido -->
 
 <div id="partners">

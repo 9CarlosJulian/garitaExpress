@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title>Garita Express</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="_/img/favicon.ico" />
+	<!-- ICONOS IPHONE -->
+	<link rel="apple-touch-icon-precomposed" href="_/img/touch-icon-iphone.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="_/img/touch-icon-ipad.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
+	<script type="text/javascript" language="javascript" src="_/js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" language="javascript" src="_/js/jquery.carouFredSel-6.1.0-packed.js"></script>
+
+		<!-- optionally include helper plugins -->
+		<script type="text/javascript" language="javascript" src="_/js/helper-plugins/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" language="javascript" src="_/js/helper-plugins/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" language="javascript" src="_/js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+	
+		<script type="text/javascript" language="javascript">
+			$(function() {
+
+				//	Basic carousel, no options
+				$('#foo0').carouFredSel({
+					auto: false,
+					prev: '#prev0',
+					next: '#next0',
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+
+				//	Basic carousel + timer
+				$('#foo1').carouFredSel({
+					auto: false,
+					prev: '#prev1',
+					next: '#next1',
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+				//	Scrolled by user interaction
+				$('#foo2').carouFredSel({
+					auto: false,
+					prev: '#prev2',
+					next: '#next2',
+					pagination: "#pager2",
+					mousewheel: true,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					}
+				});
+
+				//	Variable number of visible items with variable sizes
+				$('#foo3').carouFredSel({
+					width: 360,
+					height: 'auto',
+					prev: '#prev3',
+					next: '#next3',
+					auto: false
+				});
+
+				//	Responsive layout, resizing the items
+				$('#foo4').carouFredSel({
+					responsive: true,
+					width: '100%',
+					scroll: 2,
+					items: {
+						width: 400,
+					//	height: '30%',	//	optionally resize item-height
+						visible: {
+							min: 2,
+							max: 6
+						}
+					}
+				});
+
+				//	Fuild layout, centering the items
+				$('#foo5').carouFredSel({
+					width: '100%',
+					scroll: 2
+				});
+
+			});
+		</script>
+</head>
+
+<body>
+
+<div id="top">
+	<div id="top-wp" class="wp">
+		<ul>
+			<li><a href="http://www.multipack.com.mx/">Rastrea tu compra</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li class="registrate"><a href="#">Registrate</a></li>
+		</ul>
+	</div><!-- end of #top-wp -->
+</div><!-- end of #top -->
+<div id="header">
+	<div id="header-wp" class="wp">
+		<h1 class="logo">GaritaExpress</h1>
+		<ul>
+			<li><img src="_/img/tel.png"/></li>
+			<li><a href="tel:6646811490" class="tel">01 (664) 681-1490</a></li>
+		</ul>
+	</div> <!-- end of #headerners-wp -->
+</div><!-- end of #header -->
+<div id="menu">
+	<div id="menu-wp">
+			<ul>
+				<li><a href="">Servicios</a></li>
+				<li><a href="">Como Funciona</a></li>
+				<li><a href="">Tiendas</a></li>
+				<li><a href="">Promociones</a></li>
+				<li><a href="">Cotizaciones</a></li>
+			</ul>
+	</div><!-- end of #menu-wp -->
+</div><!-- end of #menu -->
+<div id="contenido">
+	<div id="titulo">
+		<div id="shadow-up"></div>
+		<div id="titulo-wp">
+				<h1>Ofertas</h1>
+		</div><!-- end of #titulo-wp -->
+		<div id="shadow-down"></div>
+	</div> <!-- end of #titulo -->
+	<div id="info2" >
+		<div id="info-wp">
+			<div id="carrusel">
+				<div class="carrusel-con">
+				<p>Catalogos</p>
+					<div class="list_carousel">
+
+					<ul id="foo0">
+						<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/8f118f/ebebeb.png" height="100px" width="90px"/></li>
+					</ul>
+					<div class="clearfix"></div>
+					
+					
+				</div><!-- CARRUSEL 1-->
+				<a id="prev0" class="prev" href="#"><img src="_/img/flechaizq.png" class="ganga" height="39px" width="24px"/></a>
+					<a id="next0" class="next" href="#"><img src="_/img/flechader.png" class="ganga" height="39px" width="24px"/></a>
+				</div><!-- CARRUSEL-con-->
+				<div class="carrusel-con">
+				<p>Cuponeras</p>
+					<div class="list_carousel">
+					<ul id="foo1">
+						<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/8f118f/ebebeb.png" height="100px" width="90px"/></li>
+					</ul>
+					<div class="clearfix"></div>
+					
+				</div><!-- CARRUSEL 2-->
+				<a id="prev1" class="prev" href="#"><img src="_/img/flechaizq.png" class="ganga" height="39px" width="24px"/></a>
+					<a id="next1" class="next" href="#"><img src="_/img/flechader.png" class="ganga" height="39px" width="24px"/></a>
+				</div><!-- CARRUSEL-con-->
+				<div class="carrusel-con">
+				<p>Cupones</p>
+					<div class="list_carousel">
+						<ul id="foo2">
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/000000/ebebeb.png" height="100px" width="90px"/></li>
+							<li><img src="http://dummyimage.com/90x100/8f118f/ebebeb.png" height="100px" width="90px"/></li>
+						</ul>
+						<div class="clearfix"></div>	
+					</div> <!-- end of #list_carousel --><!-- CARRUSEL 3-->
+					<a id="prev2" class="prev" href="#"><img src="_/img/flechaizq.png" class="ganga" height="39px" width="24px"/></a>
+						<a id="next2" class="next" href="#"><img src="_/img/flechader.png" class="ganga" height="39px" width="24px"/></a>
+				</div><!-- CARRUSEL-con-->
+			</div> <!-- end of #carrusel -->
+		</div> <!-- end of #info-wp -->
+	</div><!-- end of #info -->
+	
+</div><!-- end of #contenido -->
+
+<div id="partners">
+	<div id="partners-wp">
+		<h1>Partners</h1>
+		<div id="sombra"></div>
+		<ul>
+			<li id="borderdeal">BorderDeal</li>
+			<li id="fedex">FedEx</li>
+		</ul>
+	</div><!-- end of #partners-wp -->
+</div> <!-- end of #partners-->
+<div id="sitemap">
+	<div id="sitemap-wp">
+		<ul id="map">
+			<li class="map-elem">
+				<ul>
+					<li><span><a href="">Servicios</span></a></li>
+					<li><a href="">Compras</a></li>
+					<li><a href="">Envios</a></li>
+					<li><a href="">Direccion en USA</a></li>
+					<li><a href="">Empresas</a></li>
+				</ul>
+			</li>
+			<li class="map-elem">
+				<ul>
+					<li><span><a href="">Como Funciona</a></span></li>
+					<li><a href="">Pagos y Envios</a></li>
+					<li><a href="">Preguntas Frecuentes</a></li>
+					<li><a href="">Testimonios</a></li>
+				</ul>
+			</li>
+			<li class="map-elem">
+				<ul>
+				<li><span><a href="">Tiendas</a></span></li>
+				<li><a href="">Catalogo</a></li>
+				<li><a href="">Comparador de precios</a></li>
+				</ul>
+			</li>
+			<li class="map-elem">
+				<ul>
+					<li><span><a href="">Promociones</a></span></li>
+					<li><a href="">Ofertas</a></li>
+					<li><a href="">Ganga Express</a></li>
+					<li><a href="">Promo Express</a></li>
+				</ul>
+			</li>
+			<li class="map-elem">
+				<ul>
+					<li><span><a href="">Garita Express</a></span></li>
+					<li><a href="">Cotizacion</a></li>
+					<li><a href="">Contacto</a></li>
+					<li><a href="">Terminos</a></li>
+					<li><a href="">Privacidad</a></li>
+				</ul>
+			</li>
+	</div><!-- end of #sitemap-wp -->
+	<p>© 2010-2012 Garita Express Todos los derechos reservados.</p>
+</div><!-- end of #sitemap -->
+</body>
+</html>
