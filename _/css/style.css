@@ -101,21 +101,39 @@ body {
 	#menu-wp {	
 		width: 960px;
 		margin: 0 auto;
-		padding-top: 20px;
+		padding-top: 22px;
 		}
-		#menu ul {
+		#menu-wp ul {
 			text-align: center;
+			position: relative;
 			}
-		#menu ul li {
-			display: inline-block;
-			margin: 0px 15px;
-			}
-			#menu ul li a {
+			#menu-wp ul li {
+				display: inline-block;
+				margin: 0px 15px;
+				}
+			#menu-wp ul li a {
 				font: normal 14px "gothambold";
 				text-transform: uppercase;
 				color: #fff;
 				text-decoration: none;
 				}
+				
+			#menu-wp ul ul {
+				display: none;
+				font: normal 12px "gothambook";
+				position: absolute;
+				top: 52px;
+				}
+				#menu-wp ul ul li {
+					float: none;
+					position: relative;
+					}
+					#menu-wp ul ul li a{
+						color: #ec1c24;
+						}
+				#menu-wp ul li a:hover > ul {
+					display: block;
+					}
 				
 	#contenido {
 		padding: 20px 0px;
@@ -128,6 +146,7 @@ body {
 			width: 100%;
 			position: absolute;
 			top: 200px;
+			z-index: 2000;
 			}
 		#shadow-down {
 			background: transparent url('../img/sombra-title-down.png') repeat-x;
@@ -135,6 +154,7 @@ body {
 			width: 100%;
 			position: absolute;
 			top: 311px;
+			z-index: 2000;
 			}	
 		#titulo {
 			height: 112px;
@@ -273,8 +293,12 @@ body {
 					font: normal 13px "allerlight";
 					}		
 /*FAQ*/
+.hide { position: absolute; top: -9999px; left: -9999px; }
+.list-wrap { min-height: 500px; }
+
 .pag-faq #contenido{
 	padding-bottom: 0px;
+	overflow: hidden;
 	}
 	#contenido-wp {
 		width: 960px;
@@ -301,22 +325,20 @@ body {
 				text-transform: uppercase;
 				color: #000;
 				}
-#faq-wp {
+.faq-wp {
 	overflow: hidden;
 	background-color: #fff;
-	float: right;
-	width: 660px;
 	padding: 15px 0px 30px 0px;
 	}
-	#faq-wp dl.faq dd.answer div ul li {
+	.faq-wp dl.faq dd.answer div ul li {
 		list-style: none;
 		}	
-	#faq-wp dl {
+	.faq-wp dl {
 		clear: both;
 		margin-left: 30px;
 		text-shadow: 1px 1px 0 white;
 		}
-		#faq-wp dt {
+		.faq-wp dt {
 			padding: 23px 0px 0px 25px;
 			position: relative;
 			display: block;
@@ -326,10 +348,10 @@ body {
 			color: #333;
 			cursor: pointer;
 			}
-			#faq-wp dt:hover {
+			.faq-wp dt:hover {
 				color: #999;
 				}
-			#faq-wp dt span.icon {
+			.faq-wp dt span.icon {
 				background: url('../img/bullets.png') no-repeat;
 				height: 12px;
 				left: 0;
@@ -337,10 +359,10 @@ body {
 				top: 25px;
 				width: 12px;
 				}
-			#faq-wp dt.opened span.icon {
+			.faq-wp dt.opened span.icon {
 				background-position: left bottom;
 				}
-		#faq-wp dd.answer {
+		.faq-wp dd.answer {
 			position: relative;
 			width: 90%;
 			float: left;
@@ -350,10 +372,30 @@ body {
 			color: #777;
 			}
 			
-			#faq-wp dd.answer div {
+			.faq-wp dd.answer div {
 				padding: 10px;
 				margin: 0 0 0px 0;	
 				}
+/*FAQ 2*/
+#faq-slider {
+	clear: both;
+	}
+	#faq-slider ul.nav {
+		float: left;
+		width: 300px;
+		overflow: hidden;
+		text-align: right;
+		padding: 20px 0px 20px 0px;
+		}
+		#faq-slider ul.nav li {
+			padding: 15px 20px 15px 15px;
+			}
+			#faq-slider ul.nav a{
+				font: normal 14px "gothambook";
+				text-transform: uppercase;
+				color: #000;
+				}
+						
 
 /*COMPRAS*/
 #costo {
@@ -370,6 +412,7 @@ body {
 	#info-wp li.flecha {
 		position: relative;
 		top: -25px;
+		list-style
 		}
 	#info-wp li.paso {
 		text-align: center;

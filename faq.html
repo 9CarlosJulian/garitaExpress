@@ -12,18 +12,16 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
-	<link rel="stylesheet" href="_/css/organictabs.css" type="text/css"/>
 	<!-- JS -->
 	<script src="_/js/jquery.js" type="text/javascript"></script>
-	<script src="_/js/faq.js" type="text/javascript"></script>
 	<script src="_/js/organictabs.jquery.js"></script>
 	<script>
 	      $(function() {
-	  
-	          $("#example-one").organicTabs();
-	  
+	          $("#faq-slider").organicTabs();
 	      });
 	  </script>
+	  <script src="_/js/faq.js" type="text/javascript"></script>
+	  
 </head>
 <body class="pag-faq">
 <div id="top">
@@ -48,9 +46,29 @@
 	<div id="menu-wp">
 			<ul>
 				<li><a href="">Servicios</a></li>
+					<ul>
+						<li><a href="">Compras</a></li>
+						<li><a href="">Envíos</a></li>
+						<li><a href="">Dirección en USA</a></li>
+						<li><a href="">Empresas</a></li>
+					</ul>
 				<li><a href="">Como Funciona</a></li>
+					<!--<ul>
+						<li><a href="">Pagos y envíos</a></li>
+						<li><a href="">Preguntas Frecuentes</a></li>
+						<li><a href="">Testimonios</a></li>
+					</ul>-->
 				<li><a href="">Tiendas</a></li>
+				<!--	<ul>
+						<li><a href="">Catálogo</a></li>
+						<li><a href="">Comparador de precios</a></li>
+					</ul>-->
 				<li><a href="">Promociones</a></li>
+					<!--<ul>
+						<li><a href="">Ofertas</a></li>
+						<li><a href="">Ganga Express</a></li>
+						<li><a href="">Promo Express</a></li>
+					</ul>-->
 				<li><a href="">Cotizaciones</a></li>
 			</ul>
 	</div>
@@ -66,116 +84,271 @@
 	</div><!-- end of #titulo -->
 
 	<div id="contenido-wp">	
-		<div id="faqmenu-wp">
-			<ul>
-				<li><a href="#">Pagos</a></li>
-				<li><a href="#">Envíos</a></li>
-				<li><a href="#">Cotizaciones</a></li>
-				<li><a href="#">Ganga Express</a></li>
-				<li><a href="#">Promo Express</a></li>
-			</ul>
-		</div><!-- end of faqmenu-wp -->
-		<div id="faq-wp">
-			<dl class="faq">
-				<dt>
-					<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
-				</dt>
-				<dd class="answer">
-					<div>
-						El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
-					</div>
-				</dd>
-			</dl>
-			<dl class="faq">
-				<dt>
-					<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
-				</dt>
-				<dd class="answer">
-					<div>
-						Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
-					</div>
-				</dd>
-			</dl>
-			<dl class="faq">
-				<dt>
-					<span class="icon"></span>¿Con que clase de seguridad cuentan?
-				</dt>
-				<dd class="answer">
-					<div>
-						Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
-					</div>
-				</dd>
-			</dl>
-			<dl class="faq">
-				<dt>
-					<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
-				</dt>
-				<dd class="answer">
-					<div>
-						Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
-					</div>
-				</dd>
-			</dl>
-		</div><!-- end of #faq-wp -->
-		<div id="example-one">
-					
+		<div id="faq-slider">
 			<ul class="nav">
-		        <li class="nav-one"><a href="#featured" class="current">Featured</a></li>
-		        <li class="nav-two"><a href="#core">Core</a></li>
-		        <li class="nav-three"><a href="#jquerytuts">jQuery</a></li>
-		        <li class="nav-four last"><a href="#classics">Classics</a></li>
+		        <li class="nav-one"><a href="#pagos" class="current">Pagos</a></li>
+		        <li class="nav-two"><a href="#envios">Envíos</a></li>
+		        <li class="nav-three"><a href="#cotizaciones">Cotizaciones</a></li>
+		        <li class="nav-four"><a href="#gangaexp">GangaExpress</a></li>
+		        <li class="nav-five last"><a href="#promoexp">PromoExpress</a></li>
 		    </ul>
-			
 			<div class="list-wrap">
-			
-				<ul id="featured">
-					<li><a href="http://css-tricks.com/perfect-full-page-background-image/">Full Page Background Images</a></li>
-					<li><a href="http://css-tricks.com/designing-for-wordpress-complete-series-downloads/">Designing for WordPress</a></li>
-					<li><a href="http://css-tricks.com/build-your-own-social-home/">Build Your Own Social Home!</a></li>
-					<li><a href="http://css-tricks.com/absolute-positioning-inside-relative-positioning/">Absolute Positioning Inside Relative Positioning</a></li>
-					<li><a href="http://css-tricks.com/ie-css-bugs-thatll-get-you-every-time/">IE CSS Bugs That'll Get You Every Time</a></li>
-					<li><a href="http://css-tricks.com/404-best-practices/">404 Best Practices</a></li>
-					<li><a href="http://css-tricks.com/date-display-with-sprites/">Date Display with Sprites</a></li>
+				<ul id="pagos" class="faq-wp">
+					<li>				
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
+							</dt>
+							<dd class="answer">
+								<div>
+									El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
+							</dt>
+							<dd class="answer">
+								<div>
+									Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Con que clase de seguridad cuentan?
+							</dt>
+							<dd class="answer">
+								<div>
+									Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
+							</dt>
+							<dd class="answer">
+								<div>
+									Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
+								</div>
+							</dd>
+						</dl>
+					</li>
 				</ul>
 				 
-				 <ul id="core" class="hide">
-		            <li><a href="http://css-tricks.com/video-screencasts/58-html-css-the-very-basics/">The VERY Basics of HTML &amp; CSS</a></li>
-		            <li><a href="http://css-tricks.com/the-difference-between-id-and-class/">Classes and IDs</a></li>
-		            <li><a href="http://css-tricks.com/the-css-box-model/">The CSS Box Model</a></li>
-		            <li><a href="http://css-tricks.com/all-about-floats/">All About Floats</a></li>
-		            <li><a href="http://css-tricks.com/the-css-overflow-property/">CSS Overflow Property</a></li>
-					<li><a href="http://css-tricks.com/css-font-size/">CSS Font Size - (px - em - % - pt - keyword)</a></li>
-					<li><a href="http://css-tricks.com/css-transparency-settings-for-all-broswers/">CSS Transparency / Opacity</a></li>
-					<li><a href="http://css-tricks.com/css-sprites/">CSS Sprites</a></li>
-					<li><a href="http://css-tricks.com/nine-techniques-for-css-image-replacement/">CSS Image Replacement</a></li>
-				 	<li><a href="http://css-tricks.com/what-is-vertical-align/">CSS Vertial Align</a></li>
-					<li><a href="http://css-tricks.com/the-css-overflow-property/">The CSS Overflow Property</a></li>
+				<ul id="envios" class="hide faq-wp">
+			 		<li>				
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Con que clase de seguridad cuentan?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
 				 </ul>
 				 
-				 <ul id="jquerytuts" class="hide">
-				    <li><a href="http://css-tricks.com/anythingslider-jquery-plugin/">Anything Slider jQuery Plugin</a></li>
-				    <li><a href="http://css-tricks.com/moving-boxes/">Moving Boxes</a></li>
-					<li><a href="http://css-tricks.com/simple-jquery-dropdowns/">Simple jQuery Dropdowns</a></li>
-					<li><a href="http://css-tricks.com/creating-a-slick-auto-playing-featured-content-slider/">Featured Content Slider</a></li>
-					<li><a href="http://css-tricks.com/startstop-slider/">Start/Stop Slider</a></li>
-					<li><a href="http://css-tricks.com/banner-code-displayer-thing/">Banner Code Displayer Thing</a></li>
-					<li><a href="http://css-tricks.com/highlight-certain-number-of-characters/">Highlight Certain Number of Characters</a></li>
-					<li><a href="http://css-tricks.com/auto-moving-parallax-background/">Auto-Moving Parallax Background</a></li>
+				<ul id="cotizaciones" class="hide faq-wp">
+			 		<li>				
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Con que clase de seguridad cuentan?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
+			 		<li>
+			 			<dl class="faq">
+			 				<dt>
+			 					<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
+			 				</dt>
+			 				<dd class="answer">
+			 					<div>
+			 						Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
+			 					</div>
+			 				</dd>
+			 			</dl>
+			 		</li>
 				 </ul>
 				 
-				 <ul id="classics" class="hide">
-		            <li><a href="http://css-tricks.com/css-wishlist/">Top Designers CSS Wishlist</a></li>
-		            <li><a href="http://css-tricks.com/what-beautiful-html-code-looks-like/">What Beautiful HTML Code Looks Like</a></li>
-		            <li><a href="http://css-tricks.com/easily-password-protect-a-website-or-subdirectory/">Easily Password Protect a Website or Subdirectory</a></li>
-		            <li><a href="http://css-tricks.com/how-to-create-an-ie-only-stylesheet/">IE-Only Stylesheets</a></li>
-		            <li><a href="http://css-tricks.com/ecommerce-considerations/">eCommerce Considerations</a></li>
-		            <li><a href="http://css-tricks.com/php-for-beginners-building-your-first-simple-cms/">PHP: Build Your First CMS</a></li>
-				 </ul>
-				 
+				<ul id="gangaexp" class="hide faq-wp">
+					<li>				
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
+							</dt>
+							<dd class="answer">
+								<div>
+									El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
+							</dt>
+							<dd class="answer">
+								<div>
+									Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Con que clase de seguridad cuentan?
+							</dt>
+							<dd class="answer">
+								<div>
+									Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
+							</dt>
+							<dd class="answer">
+								<div>
+									Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				
+				<ul id="promoexp" class="hide faq-wp">
+					<li>				
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cuándo puedo acceder a las instalaciones?
+							</dt>
+							<dd class="answer">
+								<div>
+									El horario de Minibodegas es de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 8:00 a.m. a 5:00 p.m.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Hay un tiempo mínimo de arriendo para una bodega?
+							</dt>
+							<dd class="answer">
+								<div>
+									Sí, el período mínimo requerido es de un mes. Puede quedarse tanto tiempo como lo necesite, sin compromiso a largo plazo. Para cesar el servicio, basta con avisarnos 7 días previos al día que desea retirar sus pertenencias.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Con que clase de seguridad cuentan?
+							</dt>
+							<dd class="answer">
+								<div>
+									Cada uno de nuestros locales está equipado con modernos sistemas de seguridad: circuito cerrado de T.V. con video grabación, sensores de movimiento y guardia de seguridad las 24 horas, para que Ud. se sienta seguro y tranquilo al utilizar nuestros servicios.
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl class="faq">
+							<dt>
+								<span class="icon"></span>¿Cómo puedo pagar la cuota mensual?
+							</dt>
+							<dd class="answer">
+								<div>
+									Aceptamos dinero en efectivo, cheques, tarjetas de crédito, transferencia electrónica y directamente en nuestra cuenta corriente, pregunte a nuestro personal, con gusto le atenderá.
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
 			 </div> <!-- END List Wrap -->
-		 
 		 </div> <!-- END Organic Tabs (Example One) -->
-		 
 	</div><!-- end of #contenido-wp -->	
 </div><!-- end of #contenido -->
 <div id="partners">
