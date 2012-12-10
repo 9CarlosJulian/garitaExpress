@@ -84,39 +84,43 @@ body {
 	 			#header ul li a.tel{
 	 				font: normal 23px "gothambold";
 	 				}
-#menu {
-	height: 60px;
-	/* Gradiente */
-	background: #1f3f72; /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmM2Y3MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjMWYzZjcyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMyMTQ0NzciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIzJSIgc3RvcC1jb2xvcj0iIzIxNDQ3NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMlIiBzdG9wLWNvbG9yPSIjMjM0ODdiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNSUiIHN0b3AtY29sb3I9IiMyMjQ4N2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iIzI0NGQ4MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjYlIiBzdG9wLWNvbG9yPSIjMjQ0YzgwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNyUiIHN0b3AtY29sb3I9IiMyNjUwODQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI4JSIgc3RvcC1jb2xvcj0iIzI2NTA4MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjMjg1Mzg3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjMjg1Mzg3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAlIiBzdG9wLWNvbG9yPSIjMmE1Njg5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjMjk1NTg5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjMmI1NzhjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTMlIiBzdG9wLWNvbG9yPSIjMmI1OThlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjMmQ1ZDkxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI2NGU3OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-	background: -moz-linear-gradient(top,  #1f3f72 0%, #1f3f72 1%, #214477 1%, #214477 3%, #23487b 3%, #22487b 5%, #244d80 5%, #244c80 6%, #265084 7%, #265083 8%, #285387 8%, #285387 10%, #2a5689 10%, #295589 12%, #2b578c 12%, #2b598e 13%, #2d5d91 20%, #264e79 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f3f72), color-stop(1%,#1f3f72), color-stop(1%,#214477), color-stop(3%,#214477), color-stop(3%,#23487b), color-stop(5%,#22487b), color-stop(5%,#244d80), color-stop(6%,#244c80), color-stop(7%,#265084), color-stop(8%,#265083), color-stop(8%,#285387), color-stop(10%,#285387), color-stop(10%,#2a5689), color-stop(12%,#295589), color-stop(12%,#2b578c), color-stop(13%,#2b598e), color-stop(20%,#2d5d91), color-stop(100%,#264e79)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #1f3f72 0%,#1f3f72 1%,#214477 1%,#214477 3%,#23487b 3%,#22487b 5%,#244d80 5%,#244c80 6%,#265084 7%,#265083 8%,#285387 8%,#285387 10%,#2a5689 10%,#295589 12%,#2b578c 12%,#2b598e 13%,#2d5d91 20%,#264e79 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #1f3f72 0%,#1f3f72 1%,#214477 1%,#214477 3%,#23487b 3%,#22487b 5%,#244d80 5%,#244c80 6%,#265084 7%,#265083 8%,#285387 8%,#285387 10%,#2a5689 10%,#295589 12%,#2b578c 12%,#2b598e 13%,#2d5d91 20%,#264e79 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #1f3f72 0%,#1f3f72 1%,#214477 1%,#214477 3%,#23487b 3%,#22487b 5%,#244d80 5%,#244c80 6%,#265084 7%,#265083 8%,#285387 8%,#285387 10%,#2a5689 10%,#295589 12%,#2b578c 12%,#2b598e 13%,#2d5d91 20%,#264e79 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #1f3f72 0%,#1f3f72 1%,#214477 1%,#214477 3%,#23487b 3%,#22487b 5%,#244d80 5%,#244c80 6%,#265084 7%,#265083 8%,#285387 8%,#285387 10%,#2a5689 10%,#295589 12%,#2b578c 12%,#2b598e 13%,#2d5d91 20%,#264e79 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f3f72', endColorstr='#264e79',GradientType=0 ); /* IE6-8 */	
-	}
-	#menu-wp {	
+/*	#menu-wp {	
 		width: 960px;
 		margin: 0 auto;
-		padding-top: 20px;
+		padding-top: 22px;
 		}
-		#menu ul {
+		#menu-wp ul {
 			text-align: center;
+			position: relative;
 			}
-		#menu ul li {
-			display: inline-block;
-			margin: 0px 15px;
-			}
-			#menu ul li a {
+			#menu-wp ul li {
+				display: inline-block;
+				margin: 0px 15px;
+				}
+			#menu-wp ul li a {
 				font: normal 14px "gothambold";
 				text-transform: uppercase;
 				color: #fff;
 				text-decoration: none;
 				}
 				
+			#menu-wp ul ul {
+				display: none;
+				font: normal 12px "gothambook";
+				position: absolute;
+				top: 52px;
+				}
+				#menu-wp ul ul li {
+					float: none;
+					position: relative;
+					}
+					#menu-wp ul ul li a{
+						color: #ec1c24;
+						}
+				#menu-wp ul li a:hover > ul {
+					display: block;
+					}
+				*/
 	#contenido {
 		padding: 20px 0px;
 		background-color: #fff;
@@ -128,6 +132,7 @@ body {
 			width: 100%;
 			position: absolute;
 			top: 200px;
+			z-index: 2000;
 			}
 		#shadow-down {
 			background: transparent url('../img/sombra-title-down.png') repeat-x;
@@ -135,6 +140,7 @@ body {
 			width: 100%;
 			position: absolute;
 			top: 311px;
+			z-index: 2000;
 			}	
 		#titulo {
 			height: 112px;
@@ -273,8 +279,13 @@ body {
 					font: normal 13px "allerlight";
 					}		
 /*FAQ*/
+.hide { position: absolute; top: -9999px; left: -9999px; }
+.list-wrap { min-height: 500px; z-index: 0;
+}
+
 .pag-faq #contenido{
 	padding-bottom: 0px;
+	overflow: hidden;
 	}
 	#contenido-wp {
 		width: 960px;
@@ -301,22 +312,20 @@ body {
 				text-transform: uppercase;
 				color: #000;
 				}
-#faq-wp {
+.faq-wp {
 	overflow: hidden;
 	background-color: #fff;
-	float: right;
-	width: 660px;
 	padding: 15px 0px 30px 0px;
 	}
-	#faq-wp dl.faq dd.answer div ul li {
+	.faq-wp dl.faq dd.answer div ul li {
 		list-style: none;
 		}	
-	#faq-wp dl {
+	.faq-wp dl {
 		clear: both;
 		margin-left: 30px;
 		text-shadow: 1px 1px 0 white;
 		}
-		#faq-wp dt {
+		.faq-wp dt {
 			padding: 23px 0px 0px 25px;
 			position: relative;
 			display: block;
@@ -326,10 +335,10 @@ body {
 			color: #333;
 			cursor: pointer;
 			}
-			#faq-wp dt:hover {
+			.faq-wp dt:hover {
 				color: #999;
 				}
-			#faq-wp dt span.icon {
+			.faq-wp dt span.icon {
 				background: url('../img/bullets.png') no-repeat;
 				height: 12px;
 				left: 0;
@@ -337,10 +346,10 @@ body {
 				top: 25px;
 				width: 12px;
 				}
-			#faq-wp dt.opened span.icon {
+			.faq-wp dt.opened span.icon {
 				background-position: left bottom;
 				}
-		#faq-wp dd.answer {
+		.faq-wp dd.answer {
 			position: relative;
 			width: 90%;
 			float: left;
@@ -350,10 +359,30 @@ body {
 			color: #777;
 			}
 			
-			#faq-wp dd.answer div {
+			.faq-wp dd.answer div {
 				padding: 10px;
 				margin: 0 0 0px 0;	
 				}
+/*FAQ 2*/
+#faq-slider {
+	clear: both;
+	}
+	#faq-slider ul.nav {
+		float: left;
+		width: 300px;
+		overflow: hidden;
+		text-align: right;
+		padding: 20px 0px 20px 0px;
+		}
+		#faq-slider ul.nav li {
+			padding: 15px 20px 15px 15px;
+			}
+			#faq-slider ul.nav a{
+				font: normal 14px "gothambook";
+				text-transform: uppercase;
+				color: #000;
+				}
+						
 
 /*COMPRAS*/
 #costo {
@@ -370,6 +399,7 @@ body {
 	#info-wp li.flecha {
 		position: relative;
 		top: -25px;
+		list-style
 		}
 	#info-wp li.paso {
 		text-align: center;
