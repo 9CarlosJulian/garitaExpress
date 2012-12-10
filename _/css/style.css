@@ -161,6 +161,7 @@ body {
 					}
 		#info {
 			margin-bottom: 100px;
+			
 			}		
 			#info-wp {
 				width: 960px;
@@ -656,3 +657,49 @@ body {
 		margin-left: 10px;
 		padding-top: 8px;
 	}
+#info3 {
+	background-color: white;
+
+}
+ 	
+ 	#info3 #info-wp{
+ 		position: relative;
+		width: 960px;
+		height: 450px;
+		padding-top:20px;
+ 	}
+ 	#info3 #info-wp ul {
+ 		text-align: left; 
+ 		margin: 0;	
+ 	}
+ 		#info3 li {
+ 			margin: 0;
+ 		}
+ 			 #info3 li.gray {
+		background-color: #E8E8E8;
+		}
+ 			#info3 li.tabla {
+ 				margin-right: -3px;
+ 			}
+ 		ul#comision, ul#precio {
+ 			overflow: hidden;
+ 			border-right: 1px solid #e2e2e2;
+		  -webkit-box-shadow: 2px 0px 2px -1px #e8e8e8;
+		          box-shadow: 2px 0px 2px -1px #e8e8e8;
+ 		}
+ 		#info3 ul#comision li, #info3 ul#precio li, #info3 ul.tabla-vacia li {
+ 			display: list-item;
+ 			height: 22px;
+ 			padding: 5px 0 0 25px;
+ 		}
+ 		#info3 ul#comision {
+ 			width: 240px;
+ 		}
+ 		#info3 ul#precio {
+ 			width: 150px;
+ 		}
+ 		 #info3 ul.tabla-vacia li {
+ 		 	width: 15px;
+ 		 }
+
+ 		
