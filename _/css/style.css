@@ -84,43 +84,7 @@ body {
 	 			#header ul li a.tel{
 	 				font: normal 23px "gothambold";
 	 				}
-/*	#menu-wp {	
-		width: 960px;
-		margin: 0 auto;
-		padding-top: 22px;
-		}
-		#menu-wp ul {
-			text-align: center;
-			position: relative;
-			}
-			#menu-wp ul li {
-				display: inline-block;
-				margin: 0px 15px;
-				}
-			#menu-wp ul li a {
-				font: normal 14px "gothambold";
-				text-transform: uppercase;
-				color: #fff;
-				text-decoration: none;
-				}
-				
-			#menu-wp ul ul {
-				display: none;
-				font: normal 12px "gothambook";
-				position: absolute;
-				top: 52px;
-				}
-				#menu-wp ul ul li {
-					float: none;
-					position: relative;
-					}
-					#menu-wp ul ul li a{
-						color: #ec1c24;
-						}
-				#menu-wp ul li a:hover > ul {
-					display: block;
-					}
-				*/
+
 	#contenido {
 		padding: 20px 0px;
 		background-color: #fff;
@@ -167,6 +131,7 @@ body {
 					}
 		#info {
 			margin-bottom: 100px;
+			
 			}		
 			#info-wp {
 				width: 960px;
@@ -552,3 +517,181 @@ body {
 	list-style-position: inside;
 	padding-bottom: 3px;
 }
+/* Ofertas */
+#carrusel{
+	width: 570px;
+	margin: 0 auto;
+}
+.carrusel-con{
+	width: 650px;
+	position: relative;
+	overflow: hidden;
+}
+#info-wp .carrusel-con p {
+	font-family: "gothambook";
+	text-transform: uppercase;
+	font-size: 14pt;
+	margin-bottom: 15px;
+	color: #3F66AF;
+}
+.list_carousel {
+				
+				width: 550px;
+				height: 100px;
+				margin: 0 auto;
+				margin-bottom: 15px;
+			}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+				
+				color: #999;
+				padding: 0;
+				margin: 6px;
+				display: block;
+			}
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			.prev {
+				position: absolute;
+				top: 60px;
+				left: 0;
+				z-index: 1000px;
+			}
+			.next {
+				position: absolute;
+				top: 60px;
+				right: 0;
+				z-index: 1000px;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}
+/*INDEX*/
+#slider-wp {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#compramos {
+	height: 245px;
+	width: 450px;
+	background-color: #F2F2F2;
+	float: left;
+	margin-right: 25px;
+	position: relative;
+	
+}
+	#tit-compramos {
+		width: 450px;
+		height: 35px;
+		background-color: #333333;
+	}
+	
+	#compramos img{
+		margin: 15px 12px 0 12px;
+	
+	}
+		#compramos ul {
+			position: absolute;
+			top: 140px;
+			width: 426px;
+			text-align: center;
+		}
+			#info-wp #compramos li {
+				color: white;
+				text-transform: uppercase;
+				width: 100px;
+				margin: 0 0 0 40px;
+			}
+	#compramos p {
+	margin: 5px 15px 0 15px;
+
+}
+#ganga-dia {
+	height: 245px;
+	width: 220px;
+	background-color: #F2F2F2;
+	float: left;
+	margin-right: 25px;
+}
+	#tit-ganga {
+		width: 220px;
+		height: 35px;
+		background-color: #333333;
+	}
+#calculadora {
+	height: 245px;
+	width: 240px;
+	background-color: #F2F2F2;
+	float: left;
+}
+	#tit-calc {
+		width: 240px;
+		height: 35px;
+		background-color: #333333;
+	}
+		#tit-compramos h1, #tit-ganga h1, #tit-calc h1 {
+		color: white;
+		font-family: "gothambold";
+		font-size: 11pt;
+		text-transform: uppercase;
+		margin-left: 10px;
+		padding-top: 8px;
+	}
+#info3 {
+	background-color: white;
+
+}
+ 	
+ 	#info3 #info-wp{
+ 		position: relative;
+		width: 960px;
+		height: 450px;
+		padding-top:20px;
+ 	}
+ 	#info3 #info-wp ul {
+ 		text-align: left; 
+ 		margin: 0;	
+ 	}
+ 		#info3 li {
+ 			margin: 0;
+ 		}
+ 			 #info3 li.gray {
+		background-color: #E8E8E8;
+		}
+ 			#info3 li.tabla {
+ 				margin-right: -3px;
+ 			}
+ 		ul#comision, ul#precio {
+ 			overflow: hidden;
+ 			border-right: 1px solid #e2e2e2;
+		  -webkit-box-shadow: 2px 0px 2px -1px #e8e8e8;
+		          box-shadow: 2px 0px 2px -1px #e8e8e8;
+ 		}
+ 		#info3 ul#comision li, #info3 ul#precio li, #info3 ul.tabla-vacia li {
+ 			display: list-item;
+ 			height: 22px;
+ 			padding: 5px 0 0 25px;
+ 		}
+ 		#info3 ul#comision {
+ 			width: 240px;
+ 		}
+ 		#info3 ul#precio {
+ 			width: 150px;
+ 		}
+ 		 #info3 ul.tabla-vacia li {
+ 		 	width: 15px;
+ 		 }
