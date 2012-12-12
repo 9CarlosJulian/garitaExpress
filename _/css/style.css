@@ -141,10 +141,12 @@ body {
 				#info-izq {
 					width: 450px;
 					float: left;
+					margin-top: 30px;
 					}
 				#info-der {
 					width: 450px;
 					float: right;
+					margin-top: 30px;
 					}	
 				#info-wp p{
 					text-align: justify;
@@ -528,9 +530,8 @@ body {
 	overflow: hidden;
 }
 #info-wp .carrusel-con p {
-	font-family: "gothambook";
+	font: normal 14pt "gothambook";
 	text-transform: uppercase;
-	font-size: 14pt;
 	margin-bottom: 15px;
 	color: #3F66AF;
 }
@@ -645,12 +646,14 @@ body {
 	}
 		#tit-compramos h1, #tit-ganga h1, #tit-calc h1 {
 		color: white;
-		font-family: "gothambold";
-		font-size: 11pt;
+		font: normal 11pt "gothambold";
 		text-transform: uppercase;
 		margin-left: 10px;
 		padding-top: 8px;
 	}
+	
+
+/*PROMO EXPRESS*/
 #info3 {
 	background-color: white;
 
@@ -695,3 +698,121 @@ body {
  		 #info3 ul.tabla-vacia li {
  		 	width: 15px;
  		 }
+
+/*TESTIMONIOS*/
+.id {
+	float: left;
+	width: 150px;
+	position: relative;
+
+}
+	.id h1 {
+		color: #3F66AF;
+		font-family: "gothambook";
+		font-size: 13pt;
+		font-weight: normal;
+		margin-top: 15px;
+	}
+	#info-wp .id p {
+		text-align: center;
+	}
+	
+.recomendacion {
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+.comentario {
+	float: right;
+	padding: 15px;
+	width: 500px;
+	height: 100px;
+	border: 1px solid #CCCACA;
+	position: relative;
+	-moz-border-radius:    10px;
+	-webkit-border-radius: 10px;
+	border-radius:         10px;
+	
+}
+.comentario:after, .comentario:before {
+			right: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.comentario:after {
+			border-color: rgba(255, 255, 255, 0);
+			border-right-color: #ffffff;
+			border-width: 10px;
+			top: 25%;
+			margin-top: -10px;
+		}
+		.comentario:before {
+			border-color: rgba(204, 202, 202, 0);
+			border-right-color: #CCCACA;
+			border-width: 12px;
+			top: 25%;
+			margin-top: -12px;
+		}
+	.comentario .stars {
+		background: url(../img/csg-50c7868e98462.png) no-repeat top left;
+		width: 109px;
+		height: 19px;
+		margin-bottom: 10px;
+	}
+	.comentario .star-1 {
+		background-position: 0 0; width: 109px; height: 19px;
+	}
+	.comentario .star-2 {
+		background-position: 0 -69px; width: 109px; height: 19px;
+	}
+	.comentario .star-3 {
+		background-position: 0 -138px; width: 109px; height: 19px; 
+	}
+	.comentario .star-4 {
+		background-position: 0 -207px; width: 109px; height: 19px;
+	}
+	.comentario .star-5 {
+		 background-position: 0 -276px; width: 109px; height: 19px; 
+	}
+	.comentario p {
+		border-top:  1pt solid #CCCACA;
+		padding: 10px;
+	}
+/*COTIZACION*/
+#cotizacion {
+	width: 400px;
+	float: left;
+	margin-bottom: 30px;
+}
+	#cotizacion #forma {
+		text-align: left;
+		margin: 20px 0;
+	}
+	#cotizacion label span {
+		color: #EC1C24;
+		font: normal 12pt "gothambold" 
+	}
+		#forma input#rname, #forma input#rciudad, #forma input#remail, textarea {
+			width: 400px;
+			height: 20px;
+			margin: 5px 0;
+		}
+#contacto {
+	width: 200px;
+	float: right;
+	padding-left: 100px;
+}
+	#contacto h1 {
+		text-align: left;
+		font: normal 12pt "gothambold";
+		color: #3F66AF;
+	}
+	#contacto p { 
+		margin-top: 15px;
+		font: normal 9pt "gothambook";
+		line-height: 15px;
+	}
