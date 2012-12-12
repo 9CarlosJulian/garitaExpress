@@ -651,6 +651,7 @@ body {
 		margin-left: 10px;
 		padding-top: 8px;
 	}
+	
 
 /*PROMO EXPRESS*/
 #info3 {
@@ -779,7 +780,39 @@ body {
 	}
 	.comentario p {
 		border-top:  1pt solid #CCCACA;
-		padding-top: 10px;
+		padding: 10px;
 	}
-
-		
+/*COTIZACION*/
+#cotizacion {
+	width: 400px;
+	float: left;
+	margin-bottom: 30px;
+}
+	#cotizacion #forma {
+		text-align: left;
+		margin: 20px 0;
+	}
+	#cotizacion label span {
+		color: #EC1C24;
+		font: normal 12pt "gothambold" 
+	}
+		#forma input#rname, #forma input#rciudad, #forma input#remail, textarea {
+			width: 400px;
+			height: 20px;
+			margin: 5px 0;
+		}
+#contacto {
+	width: 200px;
+	float: right;
+	padding-left: 100px;
+}
+	#contacto h1 {
+		text-align: left;
+		font: normal 12pt "gothambold";
+		color: #3F66AF;
+	}
+	#contacto p { 
+		margin-top: 15px;
+		font: normal 9pt "gothambook";
+		line-height: 15px;
+	}
