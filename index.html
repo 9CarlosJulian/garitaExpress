@@ -15,6 +15,7 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="_/css/coda-slider.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="_/css/jquery-ui.css">
 	<!-- PNG FIX for IE6 -->
 	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
 	<!--[if lte IE 6]>
@@ -23,9 +24,22 @@
 	
 	<!-- JS -->
 	<script src="_/js/jquery-1.8.2.min.js"></script>
-    <script src="_/js/jquery-ui-1.8.20.custom.min.js"></script>
     <script src="_/js/jquery.coda-slider-3.0.min.js"></script>
+    <script src="_/js/calculadoraDOS.js"></script>
+	<script src="_/js/jquery-ui.js"></script>
     <script src="_/js/slide.js" type="text/javascript"></script>
+    <script>
+		 $(document).ready(function() {
+            $("#calForm").live({mouseover:
+	            function (e) {
+                doCalc();
+            }
+             })
+             $( "#ciudad" ).autocomplete({
+    source: [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ]
+});
+        }); 
+	</script>
     <script>
     $(function(){
       /* Here is the slider using default settings */
@@ -270,7 +284,43 @@
 				<div id="tit-calc">
 					<h1>Calcula tu envio</h1>
 				</div> <!-- end of #tit-ganga -->
-			</div><!-- end of #ganga-dia -->
+				<form action="" id="calForm">
+					<div id="input-c">
+						<label class="labels" for="costo"> Costo</label></br>
+						<input type="text"  name="costo" id="costos"/>
+					</div>
+					<div id="input-p">
+						<label class="labels" for="peso">Peso</label></br>
+					    <input type="radio"   name="peso" value="ligero" />
+					    <label class="respuesta" for="peso">  1-5kg</label>
+					    <input type="radio"  name="peso" value="medio" />
+					    <label class="respuesta" for="peso"> 5kg-15kg</label>
+					    <input type="radio" name="peso" value="pesado" /> 
+					    <label class="respuesta" for="peso"> 15kg-50kg</label>
+					</div>
+					<div id="input-t">
+					    <label class="labels" for="tamano">Tamano</label></br>
+					   	<input type="radio" name="tamano" value="chico" />
+					   	<label class="respuesta" for="tamano">Chico</label>
+					    <input type="radio"  name="tamano" value="mediano" />
+					    <label class="respuesta" for="tamano">Mediano</label>
+					    <input type="radio" name="tamano" value="grande" />
+					    <label class="respuesta" for="tamano">Grande</label>
+				    </div>
+				    <div id="input-d">
+					   	<label class="labels" for="ciudad">Ciudad</label></br>
+					   	<input  type="text" class="radio" name="ciudad" id="ciudad"/>
+				   	</div>
+				   	<div id="input-o">
+					   	<label class="labels" for="cambio">Tipo de cambio</label></br>
+					    <input type="radio" name="moneda" value="pesos" />
+					    <label class="respuesta" for="cambio">Pesos</label>
+					    <input type="radio" name="moneda"  value="dolares" />
+					    <label class="respuesta" for="cambio">Dolares</label>
+				    </div>
+				    </form> ​
+				    <div id="total-div"><h1>Total</h1> <div id="totals"></div></div>
+			</div><!-- end of #calculadora -->
 		</div><!-- end of #info-wp -->
 	</div><!-- end of #info -->
 </div><!-- end of #contenido -->

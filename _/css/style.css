@@ -638,6 +638,7 @@ body {
 	width: 240px;
 	background-color: #F2F2F2;
 	float: left;
+	overflow: hidden;
 }
 	#tit-calc {
 		width: 240px;
@@ -651,7 +652,41 @@ body {
 		margin-left: 10px;
 		padding-top: 8px;
 	}
-	
+		#calculadora #calForm {
+			margin: 10px 0 0 10px;
+			text-align: left;
+			height: 195px;
+		}
+			#calculadora #input-c, #input-p, #input-t, #input-d {
+				margin: 0;
+			}
+			#calculadora label.labels {
+				color: #282828;
+				
+			}
+			#calForm label.respuesta {
+					color: #6B6B6B;
+					font: normal 10pt "gothambook";
+				}
+			#calculadora input#costos, input#ciudad {
+				width: 200px;
+			}
+		#total-div {
+			height: 30px;
+			background-color: #3F66AF;
+		}
+		#total-div h1 {
+			font: normal 12pt "gothambold";
+			text-transform: uppercase;
+			color: white;
+			float: left;
+		}
+		#totals {
+			float: right;
+			font: normal 12pt "gothambold";
+			color: white;
+		}
+
 
 /*PROMO EXPRESS*/
 #info3 {
