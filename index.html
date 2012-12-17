@@ -30,7 +30,8 @@
     <script src="_/js/slide.js" type="text/javascript"></script>
     <script>
 		 $(document).ready(function() {
-            $("#calForm").live({mouseover:
+            $("#calForm").live({
+	            mouseover:
 	            function (e) {
                 doCalc();
             }
@@ -115,7 +116,7 @@
 </div><!-- end of #top -->
 <div id="header">
 	<div id="header-wp" class="wp">
-		<h1 class="logo">GaritaExpress</h1>
+		<a href="index.html" class="logo">GaritaExpress</a>
 		<ul>
 			<li><img src="_/img/tel.png" alt=""/></li>
 			<li><a href="tel:6646811490" class="tel">01 (664) 681-1490</a></li>
@@ -135,7 +136,7 @@
 	            </div>
 	            <div class="col_1">
 	            	<a href="envios.html">
-	                    <h1>Envíos</h1> 
+	                      <h1>Paqueteria</h1> 
 	                    <div class="temp_icon"></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
@@ -254,7 +255,7 @@
 				<div id="tit-compramos">
 					<h1>Compramos por ti</h1>
 				</div> <!-- end of #tit-compramos -->
-				<img src="_/img/proceso.png" height="140" width="426" alt=""/>
+				<img src="_/img/proceso.png" height="198" width="426" alt=""/>
 				<ul>
 					<li>Realizamos tu pedido</li>
 					<li>Realizamos la compra</li>
@@ -300,10 +301,10 @@
 				   	</div>
 				   	<div class="input_calc">
 					   	<label class="labels" for="cambio">Tipo de cambio</label><br>
+					     <input type="radio" name="moneda"  value="dolares" checked/>
+					    <label class="respuesta" for="cambio">Dolares</label>
 					    <input type="radio" name="moneda" value="pesos" />
 					    <label class="respuesta" for="cambio">Pesos</label>
-					    <input type="radio" name="moneda"  value="dolares" />
-					    <label class="respuesta" for="cambio">Dolares</label>
 				    </div>
 				</form> ​
 				<div id="total-div"><h1>Total</h1> <div id="totals"></div></div>
@@ -329,7 +330,7 @@
 				<ul>
 					<li><span><a href="#">Servicios</a></span></li>
 					<li><a href="compras.html">Compras</a></li>
-					<li><a href="paqueteria.html">Envios</a></li>
+					<li><a href="envios.html">Paqueteria</a></li>
 					<li><a href="direccion.html">Direccion en USA</a></li>
 					<li><a href="empresas.html">Empresas</a></li>
 				</ul>
@@ -339,7 +340,7 @@
 					<li><span><a href="#">Como Funciona</a></span></li>
 					<li><a href="pagosyenvios.html">Pagos y Envios</a></li>
 					<li><a href="faq.html">Preguntas Frecuentes</a></li>
-					<li><a href="">Testimonios</a></li>
+					<li><a href="testimonios.html">Testimonios</a></li>
 				</ul>
 			</li>
 			<li class="map-elem">
@@ -352,18 +353,18 @@
 			<li class="map-elem">
 				<ul>
 					<li><span><a href="#">Promociones</a></span></li>
-					<li><a href="#">Ofertas</a></li>
+					<li><a href="ofertals.html">Ofertas</a></li>
 					<li><a href="gangaexp.html">Ganga Express</a></li>
-					<li><a href="#">Promo Express</a></li>
+					<li><a href="promoexp">Promo Express</a></li>
 				</ul>
 			</li>
 			<li class="map-elem">
 				<ul>
 					<li><span><a href="#">Garita Express</a></span></li>
-					<li><a href="#">Cotizacion</a></li>
-					<li><a href="#">Contacto</a></li>
-					<li><a href="#">Terminos</a></li>
-					<li><a href="#">Privacidad</a></li>
+					<li><a href="cotizacion.html">Cotizacion</a></li>
+					<li><a href="cotizacion.html">Contacto</a></li>
+					<li><a href="terminos.html">Terminos</a></li>
+					<li><a href="privacidad.html">Privacidad</a></li>
 				</ul>
 			</li>
 		</ul><!--end of #map -->	

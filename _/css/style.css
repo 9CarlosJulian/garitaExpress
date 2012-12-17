@@ -62,7 +62,7 @@ body {
 		padding-top: 28px;
 		overflow: hidden;
 		}	 			
-	#header h1.logo {
+	#header a.logo {
 	 	display: block;
 	 	width: 224px;
 	 	height: 32px;
@@ -579,7 +579,7 @@ body {
 	overflow: hidden;
 }
 #compramos {
-	height: 245px;
+	height: 309px;
 	width: 450px;
 	background-color: #F2F2F2;
 	float: left;
@@ -599,7 +599,8 @@ body {
 	}
 		#compramos ul {
 			position: absolute;
-			top: 140px;
+			bottom: 70px;
+			right: 30px;
 			width: 426px;
 			text-align: center;
 		}
@@ -614,7 +615,7 @@ body {
 
 }
 #ganga-dia {
-	height: 245px;
+	height: 309px;
 	width: 220px;
 	background-color: #F2F2F2;
 	float: left;
@@ -845,7 +846,12 @@ body {
 		color: #3F66AF;
 	}
 	#contacto p { 
-		margin-top: 15px;
+		margin: 15px 0;
 		font: normal 9pt "gothambook";
 		line-height: 15px;
+	}
+	#contacto a {
+		text-align: left;
+		color:#282828;
+		font-size: 9pt;
 	}
