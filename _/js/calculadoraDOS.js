@@ -4,6 +4,7 @@ function doCalc(){
 		var peso = $('input[name="peso"]:checked').val();
 		var tamano = $('input[name="tamano"]:checked').val();
 		var cambio = $('input[name="moneda"]:checked').val();
+		var ciudad = $('input[name="ciudad"]:checked').val();
 
 
 if( peso == 'ligero' && tamano == 'chico' )
