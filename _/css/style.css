@@ -352,7 +352,7 @@ body {
 		margin-bottom: 30px;
 		}
 	#info-wp li {
-		display:inline-block;
+		display: inline-block;
 		margin: 0 10px 0 10px;
 		}
 	#info-wp li.flecha {
@@ -484,19 +484,14 @@ body {
 	margin: 0 auto;
 	width: 860px;
 
+
 	}
 	#info-wp ul.catalogo li {
 		overflow: hidden;
+		width: 160px;
+		height: 210px;
+		vertical-align: top;
 		}
-		#info-wp ul.catalogo li.first {
-		margin-bottom: 15px;
-		}
-	#info-wp ul.catalogo li.second {
-		margin-bottom: 15px;
-		}
-		#info-wp ul.catalogo img {
-			margin-bottom: 10px;
-			}
 		#info-wp ul.catalogo li a {
 			text-align: center;
 			color: #EC1C24;
@@ -510,13 +505,27 @@ body {
 		text-align: center;
 		}
 	#info-wp #lista {
-		float: right;
+		float: left;
+		
 		}
+		#info-wp #lista ul li {
+			vertical-align: top
+		}
+
 		#info-wp #lista ul.tiendas li {
 			display: list-item;
 			list-style: none;
 			text-align: left;
 			}
+		#info-wp #lista li h3 {
+			text-transform: uppercase;
+			font: normal 12px "gothambook";
+			margin-bottom: 10px;
+			color: #EC1C24;
+		}
+		#info-wp #lista li h3.doble {
+			margin-bottom: 5px;
+		}
 		#info-wp #lista a {
 			color: #6B6B6B;
 			}
@@ -534,6 +543,10 @@ body {
 		#info2 #info-wp img.ganga {
 			margin-bottom: 15px;
 			}
+		#ctimer span {
+			font-family: "gothambook";
+			font-size: 60px;
+		}
 		span.asterisco {
 			color: #EC1C24;
 			font-family: "gothamBold"
@@ -545,6 +558,7 @@ body {
 			font-family: "gothamBold";
 			margin-bottom: 50px;
 			}
+		
 /* Empresas */
 #costo-wp ul#info-emp li {
 	list-style: disc;
