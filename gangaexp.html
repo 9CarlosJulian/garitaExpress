@@ -14,7 +14,35 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
-
+	<script src="_/js/jquery-1.8.2.min.js"></script>
+    <script src="_/js/kkcountdown.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+            $(document).ready(function(){
+                $(".kkcount-down-1").kkcountdown({
+                	dayText		: 'day ',
+                	daysText 	: 'days ',
+                    hoursText	: 'h ',
+                    minutesText	: 'm ',
+                    secondsText	: 's',
+                    displayZeroDays : false,
+                    callback	: test,
+                    oneDayClass	: 'one-day'
+                });
+                $(".kkcount-down").kkcountdown({
+                	dayText		: 'd ',
+                	daysText 	: 'd ',
+                    hoursText	: ':',
+                    minutesText	: ':',
+                    secondsText	: '',
+                    displayZeroDays : false,
+                    callback	: test,
+                    addClass	: 'shadow'
+                });
+            });
+            function test(){
+            	console.log('KONIEC');
+            }
+        </script>
 </head>
 
 <body>
@@ -154,17 +182,14 @@
 	<div id="info2" >
 		<div id="info-wp">
 				<div id="texto-700">
-					<img src="http://dummyimage.com/700x220/d3cfcf/000000.png&text=GANGA" class="ganga" height="220px" width="700px"/></br>
+					<img src="http://dummyimage.com/700x350/000000/F2F2F2&text=GANGA" class="ganga" height="500px" width="700px"/></br>
+					<div id="ctimer">
+                	<span time="1392145200" class="kkcount-down"></span>
+            		</div>  
 					<p>
-					Bacon ipsum dolor sit amet chicken ham hock filet mignon jerky sirloin chuck tri-tip. Short ribs beef ribs jerky drumstick kielbasa sirloin tri-tip. Short ribs tongue filet mignon meatball shank pancetta turducken jerky ground round. Rump turkey frankfurter jowl swine, sirloin ham hock fatback short ribs bresaola tri-tip jerky chicken. Beef ribs filet mignon cow, beef pork tenderloin meatball ground round brisket. Shoulder t-bone short loin, tongue ham hock doner frankfurter kielbasa drumstick filet mignon salami corned beef.
-					</br>
-					</br>
-					Bacon ipsum dolor sit amet chicken ham hock filet mignon jerky sirloin chuck tri-tip. Short ribs beef ribs jerky drumstick kielbasa sirloin tri-tip. Short ribs tongue filet mignon meatball shank pancetta turducken jerky ground round. Rump turkey frankfurter jowl swine, sirloin ham hock fatback short ribs bresaola tri-tip jerky chicken. 
-					</br>
-					</br>
 					<span class="asterisco">*</span>Beef ribs filet mignon cow, beef pork tenderloin meatball ground round brisket. Shoulder t-bone short loin, tongue ham hock doner frankfurter.
 					</p>
-					<a class="ganga" href="">Comprar ></a>
+					<a class="ganga" href="">Contacto ></a>
 				</div> <!-- end of #texto-700 -->
 		</div> <!-- end of #info-wp -->
 	</div><!-- end of #info -->
@@ -211,7 +236,7 @@
 			<li class="map-elem">
 				<ul>
 					<li><span><a href="#">Promociones</a></span></li>
-					<li><a href="ofertals.html">Ofertas</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
 					<li><a href="gangaexp.html">Ganga Express</a></li>
 					<li><a href="promoexp">Promo Express</a></li>
 				</ul>

@@ -352,7 +352,7 @@ body {
 		margin-bottom: 30px;
 		}
 	#info-wp li {
-		display:inline-block;
+		display: inline-block;
 		margin: 0 10px 0 10px;
 		}
 	#info-wp li.flecha {
@@ -369,6 +369,9 @@ body {
 #info2 #info-wp{
 	padding-top: 30px;
 	}
+#info2  p.giant, #costo  p.giant {
+	font-size: 18px;
+}
 #costo-wp {
 	width: 800px;
 	margin: 0 auto;
@@ -378,17 +381,34 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 	color: #EC1C24;
-	font: normal 13pt "gothambook";
+	font: normal 13pt "gothambold";
 	padding: 0px 0px 20px 0px;
 	}
-.division-title {
+.division-title2 {
+	background: url('../img/division-clean.png') no-repeat center;
+	width: 940px;
+	height: 53px;
+	margin: 15px auto 0 auto;
+	padding: 5px 0px;
+	}
+	.division-title2 img.i-info, .division-title2 img.i-costo  {
+		position: relative;
+		top: 5px;
+	}	
+		.division-title2 img.i-info {
+			left: 295px;
+		}
+		.division-title2 img.i-costo {
+			left: 660px;
+		}
+#division-title {
 	background: url('../img/division.png') no-repeat center;
 	width: 940px;
 	height: 53px;
 	margin: 15px auto 0 auto;
 	padding: 5px 0px;
 	}	
-	.division-title h2 {
+	#division-title h2 {
 		text-align: center;
 		text-transform: uppercase;
 		color: #EC1C24;
@@ -398,7 +418,7 @@ body {
 		line-height: 15px;
 		}	
 	#costo-izq {
-		float: left;
+		float: right;
 		}
 		#costo-izq li.tabla {
 			display: inline-block;
@@ -408,6 +428,7 @@ body {
 				padding: 5px 0px 0px 25px;
 				height: 22px;
 				overflow: hidden;
+				font: normal 13px "gothambook";
 				}
 				
 	#costo-izq ul.precio, #costo-izq ul.comision {
@@ -427,36 +448,50 @@ body {
 			overflow: hidden;
 			}
 	#costo-izq li span {
-		color: #6B6B6B;
+		color: #3F66AF;
 		text-transform: uppercase;
-		font: normal 14px "gothambook";
+		font: normal 14px "gothambold";
 		}
 	#costo-izq li.gray {
 		background-color: #E8E8E8;
 		}
+	#costo-izq a.ganga {
+		margin-top: 20px;
+	}
 	#costo-der {
-		float:right;
-		margin-top:30px;
+		float: left;
+		width: 500px;
 		}
-		
+		#costo-der ul {
+			margin-top: 25px;
+		}
+		#costo-der li {
+			margin: 5px 0 5px 0;
+			font-size: 18px ;
+		}
+		#costo-der p {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+	#info-emp li {
+		margin: 5px 0 5px 0;
+		font-size: 16px;
+	}
+
+
 /*Catalogo*/
 #info-wp ul.catalogo{
 	margin: 0 auto;
 	width: 860px;
 
+
 	}
 	#info-wp ul.catalogo li {
 		overflow: hidden;
+		width: 160px;
+		height: 210px;
+		vertical-align: top;
 		}
-		#info-wp ul.catalogo li.first {
-		margin-bottom: 15px;
-		}
-	#info-wp ul.catalogo li.second {
-		margin-bottom: 15px;
-		}
-		#info-wp ul.catalogo img {
-			margin-bottom: 10px;
-			}
 		#info-wp ul.catalogo li a {
 			text-align: center;
 			color: #EC1C24;
@@ -470,13 +505,27 @@ body {
 		text-align: center;
 		}
 	#info-wp #lista {
-		float: right;
+		float: left;
+		
 		}
+		#info-wp #lista ul li {
+			vertical-align: top
+		}
+
 		#info-wp #lista ul.tiendas li {
 			display: list-item;
 			list-style: none;
 			text-align: left;
 			}
+		#info-wp #lista li h3 {
+			text-transform: uppercase;
+			font: normal 12px "gothambook";
+			margin-bottom: 10px;
+			color: #EC1C24;
+		}
+		#info-wp #lista li h3.doble {
+			margin-bottom: 5px;
+		}
 		#info-wp #lista a {
 			color: #6B6B6B;
 			}
@@ -494,7 +543,11 @@ body {
 		#info2 #info-wp img.ganga {
 			margin-bottom: 15px;
 			}
-		#info2 #info-wp p span.asterisco {
+		#ctimer span {
+			font-family: "gothambook";
+			font-size: 60px;
+		}
+		span.asterisco {
 			color: #EC1C24;
 			font-family: "gothamBold"
 			}
@@ -505,6 +558,7 @@ body {
 			font-family: "gothamBold";
 			margin-bottom: 50px;
 			}
+		
 /* Empresas */
 #costo-wp ul#info-emp li {
 	list-style: disc;
