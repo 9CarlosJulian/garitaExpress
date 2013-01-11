@@ -15,6 +15,7 @@
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
 	<link rel="stylesheet" type="text/css" media="screen" href="_/css/coda-slider.css">
+	<link href="_/css/video-js.css" rel="stylesheet" type="text/css">
 
 	<!-- PNG FIX for IE6 -->
 	<!-- http://24ways.org/2007/supersleight-transparent-png-in-ie6 -->
@@ -27,6 +28,7 @@
     <script src="_/js/jquery.coda-slider-3.0.min.js"></script>
     <script src="_/js/calculadoraDOS.js"></script>
 	<script src="_/js/jquery-ui.js"></script>
+	<script src="_/js/video.js"></script>
     <script src="_/js/slide.js" type="text/javascript"></script>
     <script>
 		 $(document).ready(function() {
@@ -241,7 +243,14 @@
 	      </div>
 	      <div>
 	        <h2 class="title"></h2>
-	        <p>Cras luctus fringilla odio vel hendrerit. Cras pulvinar auctor sollicitudin. Sed lacus quam, sodales sit amet feugiat sit amet, viverra nec augue. Sed enim ipsum, malesuada quis blandit vel, posuere eget erat. Sed a arcu justo. Integer ultricies, nunc at lobortis facilisis, ligula lacus vestibulum quam, id tincidunt sapien arcu in velit. Vestibulum consequat augue et turpis condimentum mollis sed vitae metus. Morbi leo libero, tincidunt lobortis fermentum eget, rhoncus vel sem. Morbi varius viverra velit vel tempus. Morbi enim turpis, facilisis vel volutpat at, condimentum quis erat. Morbi auctor rutrum libero sed placerat. Etiam ipsum velit, eleifend in vehicula eu, tristique a ipsum. Donec vitae quam vel diam iaculis bibendum eget ut diam. Fusce quis interdum diam. Ut urna justo, dapibus a tempus sit amet, bibendum at lectus. Sed venenatis molestie commodo.</p>
+	        <div id="text">  <img src="_/img/aprende.png" alt=""/>  <img src="_/img/facil.png" id="facil" alt=""/></div>
+	         <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      				poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}">
+			    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+			    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+			    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+			    <track kind="captions" src="captions.vtt" srclang="en" label="English" />
+			 </video>
 	      </div>
 	    </div>
 	</div><!-- end of #slider-wp -->
