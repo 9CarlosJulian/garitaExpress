@@ -106,7 +106,10 @@
 	padding: 3px;
 	text-indent: 4px;
 	margin: 15px 15px 0 0;
-
+}
+.ps-content a img {
+	position: relative;
+	top: 3px;
 }
 
 .no-touch .ps-content a:last-child:hover {

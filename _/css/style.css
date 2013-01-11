@@ -147,7 +147,10 @@ body {
 				#info-wp p{
 					text-align: justify;
 					font-size: 12px;
-					}	
+					}
+				#info-izq p {
+					margin-bottom: 20px;
+				}	
 		
 #partners {
 	background: #333333;
@@ -462,22 +465,74 @@ body {
 		float: left;
 		width: 500px;
 		}
+		#costo-der img#dos {
+			float: left;
+			vertical-align: middle;
+		}
 		#costo-der ul {
 			margin-top: 25px;
+			margin-left: 30px;
 		}
 		#costo-der li {
-			margin: 5px 0 5px 0;
-			font-size: 18px ;
+			margin: 10px 0 10px 0;
 		}
-		#costo-der p {
+		#costo-der li p {
+			font-size: 18px ;
+		
+		}
+		#costo-der p#nota {
 			font-size: 14px;
 			margin-top: 20px;
 		}
+.circ-uno {
+	background: url(../img/1-30.png);
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 225px;
+	}
+.circ-dos {
+	background: url(../img/2-30.png);
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 225px;
+	}
+.circ-tres {
+	background: url(../img/3-30.png);
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	left: 225px;
+	}
+#e-circuno {
+	top: 662px;
+}
+#e-circdos {
+	top: 736px;
+}
+#c-circuno {
+	top: 610px;
+}
+#c-circdos {
+	top: 642px;
+}
+#c-circtres {
+	top: 675px;
+}
+#d-circuno {
+	top: 640px;
+}
+#d-circdos {
+	top: 680px;
+}
+#d-circtres {
+	top: 735px;
+}
 	#info-emp li {
 		margin: 5px 0 5px 0;
 		font-size: 16px;
 	}
-
 
 /*Catalogo*/
 #info-wp ul.catalogo{
@@ -502,14 +557,20 @@ body {
 		overflow: hidden;
 		}
 	#categoria.cat-1col {
-		width: 330px;
+		width: 370px;
 		}
 	#categoria.cat-2col {
-		width: 330px;
+		width: 500px;
 		}
 	#categoria.cat-3col {
-		width: 330px;
+		width: 670px;
 		}	
+	#categoria.cat-4col {
+		width: 800px;
+		}	
+	#categoria.cat-5col {
+		width: 700px;
+		}
 	#categoria img.cat-img{
 		width: 160px;
 		float: left;
@@ -518,30 +579,38 @@ body {
 	#categoria #lista {
 		float: left;
 		}
-		#categoria #lista ul li {
-			vertical-align: top
+		#categoria ul#lista  li {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 10px;
 		}
-
 		#categoria #lista ul.tiendas li {
 			display: list-item;
 			list-style: none;
 			text-align: left;
 			}
-		#categoria #lista li h3 {
+		#categoria ul.tiendas li.margin {
+			margin-bottom: 10px;
+		}
+		#categoria ul.tiendas li h3 {
 			text-transform: uppercase;
 			font: normal 12px "gothambook";
 			margin-bottom: 10px;
 			color: #EC1C24;
+			
+
 		}
-		#categoria #lista li h3.doble {
-			margin-bottom: 5px;
-		}
-		#categoria #lista a {
+		#categoria ul.tiendas a {
 			color: #6B6B6B;
 			}
-		#categoria #lista a:hover {
+		#categoria ul.tiendas a:hover {
 			color: #3F66AF;
 			}
+		#categoria ul.tiendas li img {
+			padding-right: 5px;
+			position: relative;
+			top: 3px;
+		}
 			
 			
 /* Ganga Express */
@@ -555,6 +624,9 @@ body {
 		#info2 #info-wp img.ganga {
 			margin-bottom: 15px;
 			}
+		#ctimer {
+			margin: 10px 0 30px 0;
+		}
 		#ctimer span {
 			font-family: "gothambook";
 			font-size: 60px;
@@ -570,6 +642,10 @@ body {
 			font-family: "gothamBold";
 			margin-bottom: 50px;
 			}
+		#info2 #info-wp a.ganga img, #costo a.ganga img {
+			position: relative;
+			top: 4px;
+		}
 		
 /* Empresas */
 #costo-wp ul#info-emp li {
@@ -657,9 +733,10 @@ body {
 		width: 450px;
 		height: 35px;
 		background-color: #333333;
+		
 	}
 	
-	#compramos img{
+	#compramos img#proceso{
 		margin: 15px 12px 0 12px;
 	
 	}
@@ -709,7 +786,14 @@ body {
 		text-transform: uppercase;
 		margin-left: 10px;
 		padding-top: 8px;
+		float: left;
 	}
+		#tit-compramos img, #tit-ganga img, #tit-calc img {
+			float: right;
+		}
+		#tit-compramos img {
+			margin-right: 3px;
+		}
 		#calculadora #calForm {
 			margin: 10px 0 0 10px;
 			text-align: left;
@@ -740,11 +824,16 @@ body {
 			overflow: hidden;
 			padding: 10px 10px 0px 10px;
 		}
+		#total-div img {
+			float: left;
+			margin-right: 8px;
+		}
 		#total-div h1 {
 			font: normal 12pt "gothambold";
 			text-transform: uppercase;
 			color: white;
 			float: left;
+
 		}
 		#total-div #totals {
 			float: right;
