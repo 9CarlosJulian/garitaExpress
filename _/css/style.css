@@ -474,7 +474,7 @@ body {
 			margin-left: 30px;
 		}
 		#costo-der li {
-			margin: 10px 0 10px 0;
+			margin: 10px 0 10px 5px;
 		}
 		#costo-der li p {
 			font-size: 18px ;
@@ -489,21 +489,21 @@ body {
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	left: 225px;
+	
 	}
 .circ-dos {
 	background: url(../img/2-30.png);
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	left: 225px;
+	
 	}
 .circ-tres {
 	background: url(../img/3-30.png);
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	left: 225px;
+	
 	}
 #e-circuno {
 	top: 662px;
