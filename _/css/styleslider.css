@@ -57,12 +57,21 @@
 }
 
 .ps-content h2 {
-	padding: 0 15px 10px 15px;
+	padding: 0 15px 0px 15px;
 	color: #3F66AF;
-	margin: 0 0 10px;
+	margin: 0 0 0px;
 	text-align: left;
 	font-family: "gothambold";
 	font-size: 16pt;
+}
+.ps-content h2#tag{
+	background: transparent url('../img/tag-b.png') no-repeat left top;
+	width: 75px;
+	height: 27px;
+	font-size: 13pt;
+	position: relative;
+	padding-top: 4px;
+	margin: 5px 0 10px 0;
 }
 .ps-content h3 {
 	padding: 0 15px 0 15px;
@@ -100,21 +109,23 @@
 .ps-content a:last-child {
 	font-size: 14px;
 	font-weight: 700;
-	color: #3F66AF;
+	color: white;
+	background-color: #3F66AF;
 	float: right;
 	text-transform: uppercase;
-	padding: 3px;
+	padding: 3px 15px 5px 15px;
 	text-indent: 4px;
 	margin: 15px 15px 0 0;
 }
 .ps-content a img {
 	position: relative;
 	top: 3px;
+	right: 5px;
 }
 
 .no-touch .ps-content a:last-child:hover {
-	color: #EC1C24;
-	border-color: #b2d79d;
+	
+	
 }
 
 

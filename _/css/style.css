@@ -38,7 +38,7 @@ body {
 	 			}
 	 			#top ul li.registrate {
 	 				display: inline-block;
-	 				background: transparent url('../img/label.png') no-repeat;
+	 				background: transparent url('../img/label2.png') no-repeat;
 	 				width: 94px;
 	 				height: 66px;
 	 				position: relative;
@@ -645,6 +645,7 @@ body {
 		#info2 #info-wp a.ganga img, #costo a.ganga img {
 			position: relative;
 			top: 4px;
+			right: 3px;
 		}
 		
 /* Empresas */
