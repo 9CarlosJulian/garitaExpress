@@ -69,9 +69,8 @@
 	width: 75px;
 	height: 27px;
 	font-size: 13pt;
-	position: relative;
-	padding-top: 4px;
 	margin: 5px 0 10px 0;
+	padding-top: 8px;
 }
 .ps-content h3 {
 	padding: 0 15px 0 15px;
