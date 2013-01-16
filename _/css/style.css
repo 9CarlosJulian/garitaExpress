@@ -605,13 +605,13 @@ body {
 			}
 		#categoria ul.tiendas a:hover {
 			color: #3F66AF;
+			background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
 			}
 		#categoria ul.tiendas li img {
 			padding-right: 5px;
 			position: relative;
 			top: 3px;
 		}
-			
 			
 /* Ganga Express */
 	#info2 #info-wp {
