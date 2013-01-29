@@ -144,13 +144,35 @@ body {
 					float: right;
 					margin-top: 30px;
 					}	
-				#info-wp p{
+				#info-der img {
+					margin: 10px 0 10px 0;
+				}
+				#info-izq p, #info-der p {
+					font: normal 40px "gothambook";
+					font-size: 18px;
+					margin-bottom: 10px;
+				}
+				#info-izq ul#pagos li {
+					display: list-item;
+					list-style: disc;
 					text-align: justify;
-					font-size: 12px;
-					}
-				#info-izq p {
-					margin-bottom: 20px;
-				}	
+					font-size: 16px;
+					margin-bottom: 5px;
+				}
+				#info-izq img {
+					margin: 10px 0
+				}
+				#info-izq .logos {
+					text-align: center;
+					height: 75px;
+				}
+				#info-der .logos {
+					text-align: center;
+				}
+				#info-izq img {
+					vertical-align: middle;
+				}
+				
 		
 #partners {
 	background: #333333;
@@ -352,7 +374,6 @@ body {
 /*COMPRAS*/
 	#info-wp ul {
 		text-align: center;
-		margin-bottom: 30px;
 		}
 	#info-wp li {
 		display: inline-block;
@@ -368,6 +389,7 @@ body {
 		}
 	#info-wp li h2 {
 		text-transform: uppercase;
+		margin-top: 10px;
 		}	
 #info2 #info-wp{
 	padding-top: 30px;
@@ -375,35 +397,18 @@ body {
 #info2  p.giant, #costo  p.giant {
 	font-size: 18px;
 }
-#costo-wp {
+#costo-wp, #info-costo-wp {
 	width: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	}
-#costo-wp h1 {
+#costo-wp h1, #info-costo-wp h1 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #EC1C24;
-	font: normal 13pt "gothambold";
+	font: normal 15pt "gothambold";
 	padding: 0px 0px 20px 0px;
 	}
-.division-title2 {
-	background: url('../img/division-clean.png') no-repeat center;
-	width: 940px;
-	height: 53px;
-	margin: 15px auto 0 auto;
-	padding: 5px 0px;
-	}
-	.division-title2 img.i-info, .division-title2 img.i-costo  {
-		position: relative;
-		top: 5px;
-	}	
-		.division-title2 img.i-info {
-			left: 295px;
-		}
-		.division-title2 img.i-costo {
-			left: 660px;
-		}
 #division-title {
 	background: url('../img/division.png') no-repeat center;
 	width: 940px;
@@ -420,68 +425,64 @@ body {
 		top: 18px;
 		line-height: 15px;
 		}	
-	#costo-izq {
-		float: right;
-		}
-		#costo-izq li.tabla {
+#costo-wp {
+	text-align: center;
+}
+		#costo li.tabla {
 			display: inline-block;
 			margin: 0px -3px 0px 0px;
 			}
-			#costo-izq ul li ul li{
+			#costo ul li ul li{
+				text-align: justify;
 				padding: 5px 0px 0px 25px;
-				height: 22px;
+				height: 30px;
 				overflow: hidden;
-				font: normal 13px "gothambook";
+				font: normal 13pt "gothambook";
 				}
 				
-	#costo-izq ul.precio, #costo-izq ul.comision {
-		width: 140px;
+	#costo ul.precio, #costo ul.comision {
+		width: 180px;
 		border-right: 1px solid #e2e2e2;
 		  -webkit-box-shadow: 2px 0px 2px -1px #e8e8e8;
 		          box-shadow: 2px 0px 2px -1px #e8e8e8;
 		overflow: hidden;
 		}
-	#costo-izq ul.comision {
-		width:  120px;
+	#costo ul.comision {
+		width:  160px;
 		}	
 		ul.tabla-vacia {
 			position: relative;
-			top: 10px;
-			width: 15px;
+			top: 15px;
+			width: 30px;
 			overflow: hidden;
 			}
-	#costo-izq li span {
+	#costo li span {
 		color: #3F66AF;
 		text-transform: uppercase;
-		font: normal 14px "gothambold";
+		font: normal 13pt "gothambold";
 		}
-	#costo-izq li.gray {
+	#costo li.gray {
 		background-color: #E8E8E8;
 		}
-	#costo-izq a.ganga {
+	#costo a.ganga {
 		margin-top: 20px;
+
 	}
-	#costo-der {
-		float: left;
-		width: 500px;
-		}
-		#costo-der img#dos {
-			float: left;
-			vertical-align: middle;
-		}
-		#costo-der ul {
-			margin-top: 25px;
+	#costo ul#info-emp, p.giant {
+		text-align: left;
+	}
+		#info-costo ul {
 			margin-left: 30px;
 		}
-		#costo-der li {
+		#info-costo li {
 			margin: 10px 0 10px 5px;
 		}
-		#costo-der li p {
-			font-size: 18px ;
+		#info-costo li p {
+			font-size: 17pt ;
 		
 		}
-		#costo-der p#nota {
-			font-size: 14px;
+		#info-costo p#nota {
+			font-size: 14pt;
 			margin-top: 20px;
 		}
 .circ-uno {
@@ -506,25 +507,25 @@ body {
 	
 	}
 #e-circuno {
-	top: 662px;
+	top: 632px;
 }
 #e-circdos {
-	top: 736px;
+	top: 712px;
 }
 #c-circuno {
-	top: 610px;
+	top: 567px;
 }
 #c-circdos {
-	top: 642px;
+	top: 605px;
 }
 #c-circtres {
-	top: 675px;
+	top: 645px;
 }
 #d-circuno {
-	top: 640px;
+	top: 632px;
 }
 #d-circdos {
-	top: 680px;
+	top: 672px;
 }
 #d-circtres {
 	top: 735px;
@@ -557,19 +558,19 @@ body {
 		overflow: hidden;
 		}
 	#categoria.cat-1col {
-		width: 370px;
+		width: 400px;
 		}
 	#categoria.cat-2col {
-		width: 500px;
+		width: 570px;
 		}
 	#categoria.cat-3col {
-		width: 670px;
+		width: 750px;
 		}	
 	#categoria.cat-4col {
-		width: 800px;
+		width: 920px;
 		}	
 	#categoria.cat-5col {
-		width: 700px;
+		width: 800px;
 		}
 	#categoria img.cat-img{
 		width: 160px;
@@ -594,23 +595,21 @@ body {
 		}
 		#categoria ul.tiendas li h3 {
 			text-transform: uppercase;
-			font: normal 12px "gothambook";
+			font: normal 14px "gothambold";
 			margin-bottom: 10px;
 			color: #EC1C24;
-			
-
 		}
 		#categoria ul.tiendas a {
-			color: #6B6B6B;
+			color: #333333;
+			font-size: 16px;
 			}
 		#categoria ul.tiendas a:hover {
 			color: #3F66AF;
-			background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
 			}
 		#categoria ul.tiendas li img {
 			padding-right: 5px;
 			position: relative;
-			top: 3px;
+			top: 2px;
 		}
 			
 /* Ganga Express */
@@ -742,9 +741,8 @@ body {
 	
 	}
 		#compramos ul {
-			position: absolute;
+			position: relative;
 			bottom: 70px;
-			right: 30px;
 			width: 426px;
 			text-align: center;
 		}
@@ -756,6 +754,8 @@ body {
 			}
 	#compramos p {
 	margin: 5px 15px 0 15px;
+	position: relative;
+	bottom: 30px;
 
 }
 #ganga-dia {
