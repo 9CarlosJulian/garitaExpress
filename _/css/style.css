@@ -490,21 +490,22 @@ body {
 	height: 30px;
 	width: 30px;
 	position: absolute;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> ccd1eba1f68accebdc1e5f832bf53f3d5d3a5bba
 	}
 .circ-dos {
 	background: url(../img/2-30.png);
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	
 	}
 .circ-tres {
 	background: url(../img/3-30.png);
 	height: 30px;
 	width: 30px;
 	position: absolute;
-	
 	}
 #e-circuno {
 	top: 632px;
