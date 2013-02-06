@@ -48,11 +48,18 @@
 	display:block;
 	outline:0;
 	text-decoration:none;
+	padding: 5px 5px 5px 5px;
 	}
 
 #menu-wp li:hover a.drop{
-	color:#ec1c24;
-	text-shadow: 0 0 5px #204266;
+	background: #244d7b; /* Old browsers */
+				background: -moz-linear-gradient(top, #244d7b 0%, #17324f 98%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#244d7b), color-stop(98%,#17324f)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, #244d7b 0%,#17324f 98%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, #244d7b 0%,#17324f 98%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, #244d7b 0%,#17324f 98%); /* IE10+ */
+				background: linear-gradient(to bottom, #244d7b 0%,#17324f 98%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#244d7b', endColorstr='#17324f',GradientType=0 ); /* IE6-9 */
 	}
 #menu-wp li .drop {
 	padding: 22px 20px;
@@ -173,9 +180,9 @@
 		padding: 20px 0px 20px 0px;
 		}
 		.col_1 .temp_icon {
-		width: 100px;
+		width: 120px;
 		height: 100px;
-		background-color: red;
+		
 		margin: 0 auto;
 		}
 	.col_1 p {
