@@ -397,18 +397,35 @@ body {
 #info2  p.giant, #costo  p.giant {
 	font-size: 18px;
 }
-#costo-wp, #info-costo-wp {
+#costo-wp {
 	width: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	}
-#costo-wp h1, #info-costo-wp h1 {
+#costo-wp h1 {
 	text-align: center;
 	text-transform: uppercase;
 	color: #EC1C24;
-	font: normal 15pt "gothambold";
+	font: normal 14pt "gothambold";
 	padding: 0px 0px 20px 0px;
 	}
+.division-title2 {
+	background: url('../img/division-clean.png') no-repeat center;
+	width: 940px;
+	height: 53px;
+	margin: 15px auto 0 auto;
+	padding: 5px 0px;
+	}
+	.division-title2 img.i-info, .division-title2 img.i-costo  {
+		position: relative;
+		top: 5px;
+	}	
+		.division-title2 img.i-info {
+			left: 265px;
+		}
+		.division-title2 img.i-costo {
+			left: 620px;
+		}
 #division-title {
 	background: url('../img/division.png') no-repeat center;
 	width: 940px;
@@ -425,64 +442,68 @@ body {
 		top: 18px;
 		line-height: 15px;
 		}	
-#costo-wp {
-	text-align: center;
-}
-		#costo li.tabla {
+	#costo-izq {
+		float: right;
+		}
+		#costo-izq li.tabla {
 			display: inline-block;
 			margin: 0px -3px 0px 0px;
 			}
-			#costo ul li ul li{
-				text-align: justify;
+			#costo-izq ul li ul li{
 				padding: 5px 0px 0px 25px;
-				height: 30px;
+				height: 27px;
 				overflow: hidden;
-				font: normal 13pt "gothambook";
+				font: normal 14pt "gothambook";
 				}
 				
-	#costo ul.precio, #costo ul.comision {
-		width: 180px;
+	#costo-izq ul.precio, #costo-izq ul.comision {
+		width: 185px;
 		border-right: 1px solid #e2e2e2;
 		  -webkit-box-shadow: 2px 0px 2px -1px #e8e8e8;
 		          box-shadow: 2px 0px 2px -1px #e8e8e8;
 		overflow: hidden;
 		}
-	#costo ul.comision {
-		width:  160px;
+	#costo-izq ul.comision {
+		width:  130px;
 		}	
 		ul.tabla-vacia {
 			position: relative;
-			top: 15px;
-			width: 30px;
+			top: 10px;
+			width: 15px;
 			overflow: hidden;
 			}
-	#costo li span {
+	#costo-izq li span {
 		color: #3F66AF;
 		text-transform: uppercase;
 		font: normal 13pt "gothambold";
 		}
-	#costo li.gray {
+	#costo-izq li.gray {
 		background-color: #E8E8E8;
 		}
-	#costo a.ganga {
+	#costo-izq a.ganga {
 		margin-top: 20px;
-
 	}
-	#costo ul#info-emp, p.giant {
-		text-align: left;
-	}
-		#info-costo ul {
+	#costo-der {
+		float: left;
+		width: 450px;
+		}
+		#costo-der img#dos {
+			float: left;
+			vertical-align: middle;
+		}
+		#costo-der ul {
+			margin-top: 25px;
 			margin-left: 30px;
 		}
-		#info-costo li {
+		#costo-der li {
 			margin: 10px 0 10px 5px;
 		}
-		#info-costo li p {
-			font-size: 17pt ;
+		#costo-der li p {
+			font-size: 18px ;
 		
 		}
-		#info-costo p#nota {
-			font-size: 14pt;
+		#costo-der p#nota {
+			font-size: 14px;
 			margin-top: 20px;
 		}
 .circ-uno {
@@ -490,10 +511,6 @@ body {
 	height: 30px;
 	width: 30px;
 	position: absolute;
-<<<<<<< HEAD
-	
-=======
->>>>>>> ccd1eba1f68accebdc1e5f832bf53f3d5d3a5bba
 	}
 .circ-dos {
 	background: url(../img/2-30.png);
@@ -508,28 +525,28 @@ body {
 	position: absolute;
 	}
 #e-circuno {
-	top: 632px;
+	top: 650px;
 }
 #e-circdos {
-	top: 712px;
+	top: 722px;
 }
 #c-circuno {
-	top: 567px;
+	top: 592px;
 }
 #c-circdos {
-	top: 605px;
+	top: 637px;
 }
 #c-circtres {
-	top: 645px;
+	top: 680px;
 }
 #d-circuno {
-	top: 632px;
+	top: 627px;
 }
 #d-circdos {
-	top: 672px;
+	top: 668px;
 }
 #d-circtres {
-	top: 735px;
+	top: 725px;
 }
 	#info-emp li {
 		margin: 5px 0 5px 0;
@@ -743,7 +760,7 @@ body {
 	}
 		#compramos ul {
 			position: relative;
-			bottom: 70px;
+			bottom: 48px;
 			width: 426px;
 			text-align: center;
 		}
@@ -751,7 +768,7 @@ body {
 				color: white;
 				text-transform: uppercase;
 				width: 100px;
-				margin: 0 0 0 40px;
+				margin: 0 0 0 30px;
 			}
 	#compramos p {
 	margin: 5px 15px 0 15px;
