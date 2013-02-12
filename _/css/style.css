@@ -680,7 +680,7 @@ body {
 			#costo a.ganga{
 				margin-top: 60px;
 			}
-			#info2 #info-wp a.ganga:hover, #costo a.ganga:hover {
+			#info2 #info-wp a.ganga:hover, #costo a.ganga:hover, #slider a.boton:hover {
 				background: #244d7b; /* Old browsers */
 				background: -moz-linear-gradient(top, #244d7b 0%, #17324f 98%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#244d7b), color-stop(98%,#17324f)); /* Chrome,Safari4+ */
@@ -804,9 +804,25 @@ body {
 	#compramos p {
 	margin: 5px 15px 0 15px;
 	position: relative;
-	bottom: 30px;
-
+	bottom: 25px;
 }
+	#compramos h2{
+		text-align: center;
+		margin: 0 15px 0 15px;
+		padding: 15px 15px 15px 15px;
+		color: white;
+		font: normal 14pt "gothambold";
+		text-transform: uppercase;
+		background: #2c6099; /* Old browsers */
+			background: -moz-linear-gradient(top,  #2c6099 1%, #214d7b 100%, #244d7b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2c6099), color-stop(100%,#214d7b), color-stop(100%,#244d7b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c6099', endColorstr='#244d7b',GradientType=0 ); /* IE6-9 */
+			
+	}
 #ganga-dia {
 	height: 309px;
 	width: 220px;

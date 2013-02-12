@@ -14,10 +14,16 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
-	<link rel="stylesheet" type="text/css" href="_/css/styleslider.css" />
-	<script type="text/javascript" src="_/js/modernizr.custom.79639.js"></script>
-	<noscript><link rel="stylesheet" type="text/css" href="_/css/noscript.css" /></noscript>
-
+	<link rel="stylesheet" href="_/css/slider-promo.css" type="text/css"/>
+	<script src="_/js/jquery-1.8.2.min.js"></script>
+   	<script type="text/javascript" src="_/js/s3Slider.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 3000
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -46,28 +52,28 @@
 	            <div class="col_1">
 	            	<a href="compras.html">
 		                <h1>Compramos por ti</h1> 
-		                <div class="temp_icon"></div>
+		                <div class="temp_icon" ><img src="_/img/compramos.png" alt=""/></div>
 		                <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="envios.html">
 	                     <h1>Paquetería y Mensajería</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon" style="height:90px;"><img src="_/img/box2.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="direccion.html">
 	                    <h1>Dirección en USA</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/mail.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="empresas.html">
 	                    <h1>Empresas</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/fabrica.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
@@ -78,64 +84,64 @@
 	            <div class="col_1">
 	            	<a href="pagosyenvios.html">
 	                    <h1>Pagos y Envíos</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/camion-e.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="faq.html">
 	                    <h1>Preguntas</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/preguntas.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="testimonios.html">
 	                    <h1>Testimonios</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/review.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>	        
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
 	    <li><a href="#" class="drop">Tiendas</a><!-- Begin 3 columns Item -->
-	        <div class="dropdown_2columns"><!-- Begin 3 columns container -->
+	        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
+	         <div class="col_1">
+	            	<a href="ofertas.html">
+	                    <h1>Ofertas</h1> 
+	                    <div class="temp_icon"><img src="_/img/billete.png" alt=""/></div>
+	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
+	            	</a>
+	            </div>
 	            <div class="col_1">
 	            	<a href="catalogo.html">
 	                     <h1>Catálogo de tiendas</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/archivero.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="#">
 	                    <h1>Comparador</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/compara.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>	        
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
 	    <li><a href="#" class="drop">Promociones</a><!-- Begin 3 columns Item -->
-	        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
-	            <div class="col_1">
-	            	<a href="ofertas.html">
-	                    <h1>Ofertas</h1> 
-	                    <div class="temp_icon"></div>
-	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
-	            	</a>
-	            </div>
+	        <div class="dropdown_2columns"><!-- Begin 3 columns container -->
 	            <div class="col_1">
 	            	<a href="gangaexp.html">
 	                    <h1>Ganga Express</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/reloj.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
 	            	<a href="promoexp.html">
 	                    <h1>Promo Express</h1> 
-	                    <div class="temp_icon"></div>
+	                    <div class="temp_icon"><img src="_/img/tag-m.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
@@ -145,7 +151,6 @@
 	    </li><!-- End 3 columns Item -->
 	</ul>
 </div><!-- end of #menu -->
-
 <div id="contenido">
 	<div id="titulo">
 		<div id="shadow-up"></div>
@@ -154,110 +159,36 @@
 		</div><!-- end of #titulo-wp -->
 		<div id="shadow-down"></div>
 	</div> <!-- end of #titulo -->
-	<div id="info3" >
+	<div id="info2" >
 		<div id="info-wp">
-				<section id="ps-container" class="ps-container">
-		
-			<div class="ps-header">
-				<h1></h1>
-			</div><!-- /ps-header -->
-			
-			<div class="ps-contentwrapper">
-			
-				<div class="ps-content">
-					<h2>Coby</h2><h2 id="tag">$599</h2>
-					<h3>Especificaciones</h3>
-					<ul>
-					<li class="tabla">
-						<ul id="precio">
-							<li>Marca y modelo</li>
-							<li class="gray">Sistema Operativo</li>
-							<li>Pantalla</li>
-							<li class="gray">Memoria</li>
-							<li>RAM</li>
-							<li class="gray">Procesador</li>
-							<li>Camara</li>
-							<li class="gray">Bluetooth</li>
-							<li>Puertos</li>
-						</ul>
-					</li>
-					<li class="tabla">
-						<ul id="comision">
-							<li>Coby Kyros MID7034-4</li>
-							<li class="gray">Android 4.0</li>
-							<li>7” Resistiva ( 800x480 px)</li>
-							<li class="gray">4 Gb expandibles hasta 36 Gb</li>
-							<li>512 MB</li>
-							<li class="gray">1 Ghz Cortex A5</li>
-							<li>No</li>
-							<li class="gray">No</li>
-							<li>3.5 mm audio, micro USB, micro SD</li>
-						</ul>
-					</li>
-					<li class="tabla">
-						<ul class="tabla-vacia">
-							<li></li>
-							<li class="gray"></li>
-							<li></li>
-							<li class="gray"></li>
-							<li></li>
-							<li class="gray"></li>
-							<li></li>
-							<li class="gray"></li>
-							<li></li>
-						</ul>
-					</li>
-				</ul>
-					<a href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a>
-				</div>
-				
-				<div class="ps-content">
-					<h2>Blackberry<h2 id="tag">$250</h2>
-					<p>For increased stability, re-tighten the screws about two weeks after assembly. Seat and back with restful flexibility; prevents a static sitting posture and enhances comfort.</p>
-					<a href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a>
-				</div>
-				
-				<div class="ps-content">
-					<h2>Dell<h2 id="tag">$260</h2>
-					<p>Frame made of layer-glued bent birch; a very strong and durable material. High back provides great support for your neck. Sheepskin has natural insulating properties, which make it feel warm and cosy to sit on. Extra cushions are available for variation and renewal.</p>
-					<a href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a>
-				</div>
-				
-				<div class="ps-content">
-					<h2>Motorola<h2 id="tag">$325</h2>
-					<p>Easy to keep clean; removable, machine washable cover. Seat cushion with a top layer of memory foam; moulds to the precise contours of your body and regains its shape when you get up.</p>
-					<a href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a>
-				</div>
-				
-				<div class="ps-content">
-					<h2>Acer</h2><h2 id="tag">$325</h2>
-					<p>Height adjustable for a comfortable sitting posture. The sloping seat gives a comfortable sitting position when leaning forwards.</p>
-					<a href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a>
-				</div>
-				
-			</div><!-- /ps-contentwrapper -->
-			
-			<div class="ps-slidewrapper">
-			
-				<div class="ps-slides">
-					<div style="background-image:url(_/img/1.jpg);"></div>
-					<div style="background-image:url(_/img/2.jpg);"></div>
-					<div style="background-image:url(_/img/3.jpg);"></div>
-					<div style="background-image:url(_/img/4.jpg);"></div>
-					<div style="background-image:url(_/img/5.jpg);"></div>
-				</div>
-				
-				<nav>
-					<a href="#" class="ps-prev" ></a>
-					<a href="#" class="ps-next" ></a>
-				</nav>
-				
-			</div><!-- /ps-slidewrapper -->
-			
-		</section><!-- /ps-container -->
+				<div id="slider">
+	        		<ul id="sliderContent">
+			            <li class="sliderImage">
+			                <a href=""><img src="_/img/slider-pe/1.jpg" alt="1" /></a>
+			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
+			            </li>
+			            <li class="sliderImage">
+			                <a href=""><img src="_/img/slider-pe/2.jpg" alt="2" /></a>
+			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
+			            </li>
+			            <li class="sliderImage">
+			                <img src="_/img/slider-pe/1.jpg" alt="3" />
+			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
+			            </li>
+			            <li class="sliderImage">
+			                <img src="_/img/slider-pe/2.jpg" alt="4" />
+			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
+			            </li>
+			            <li class="sliderImage">
+			                <img src="_/img/slider-pe/1.jpg" alt="5" />
+			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
+			            </li>
+			            <div class="clear sliderImage"></div>
+			        </ul>
+   					 </div>
 		</div> <!-- end of #info-wp -->
 	</div><!-- end of #info -->
-	
+
 </div><!-- end of #contenido -->
 
 <div id="partners">
@@ -293,6 +224,7 @@
 			<li class="map-elem">
 				<ul>
 				<li><span><a href="#">Tiendas</a></span></li>
+				<li><a href="ofertas.html">Ofertas</a></li>
 				<li><a href="catalogo.html">Catalogo de tiendas</a></li>
 				<li><a href="">Comparador de precios</a></li>
 				</ul>
@@ -300,7 +232,6 @@
 			<li class="map-elem">
 				<ul>
 					<li><span><a href="#">Promociones</a></span></li>
-					<li><a href="ofertas.html">Ofertas</a></li>
 					<li><a href="gangaexp.html">Ganga Express</a></li>
 					<li><a href="promoexp">Promo Express</a></li>
 				</ul>
@@ -318,14 +249,5 @@
 	</div><!-- end of #sitemap-wp -->
 	<p>© 2010-2012 Garita Express Todos los derechos reservados.</p>
 </div><!-- end of #sitemap -->
-<script src="_/js/jquery-1.8.2.min.js"></script>
-		<script type="text/javascript" src="_/js/slider.js"></script>
-		<script type="text/javascript">
-			$(function() {
-
-				Slider.init();
-			
-			});
-			</script>
 </body>
 </html>
