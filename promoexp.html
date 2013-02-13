@@ -14,16 +14,57 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
-	<link rel="stylesheet" href="_/css/slider-promo.css" type="text/css"/>
+	<link rel="stylesheet" href="_/css/promo-slider.css" type="text/css"/>
 	<script src="_/js/jquery-1.8.2.min.js"></script>
-   	<script type="text/javascript" src="_/js/s3Slider.js"></script>
+	<script type="text/javascript" src="_/js/jquery-easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="_/js/jquery-easing-compatibility.1.2.pack.js"></script>
+	<script type="text/javascript" src="_/js/coda-slider.1.1.1.pack.js"></script>
+	
 	<script type="text/javascript">
-    $(document).ready(function() {
-        $('#slider').s3Slider({
-            timeOut: 3000
-        });
-    });
-</script>
+	
+		var theInt = null;
+		var $crosslink, $navthumb;
+		var curclicked = 0;
+		
+		theInterval = function(cur){
+			clearInterval(theInt);
+			
+			if( typeof cur != 'undefined' )
+				curclicked = cur;
+			
+			$crosslink.removeClass("active-thumb");
+			$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+			
+			theInt = setInterval(function(){
+				$crosslink.removeClass("active-thumb");
+				$navthumb.eq(curclicked).parent().addClass("active-thumb");
+				$(".stripNav ul li a").eq(curclicked).trigger('click');
+				curclicked++;
+				if( 6 == curclicked )
+					curclicked = 0;
+				
+			}, 3000);
+		};
+		
+		$(function(){
+			
+			$("#main-photo-slider").codaSlider();
+			
+			$navthumb = $(".nav-thumb");
+			$crosslink = $(".cross-link");
+			
+			$navthumb
+			.click(function() {
+				var $this = $(this);
+				theInterval($this.parent().attr('href').slice(1) - 1);
+				return false;
+			});
+			
+			theInterval();
+		});
+	</script>
+   	
 </head>
 
 <body>
@@ -161,31 +202,97 @@
 	</div> <!-- end of #titulo -->
 	<div id="info2" >
 		<div id="info-wp">
-				<div id="slider">
-	        		<ul id="sliderContent">
-			            <li class="sliderImage">
-			                <a href=""><img src="_/img/slider-pe/1.jpg" alt="1" /></a>
-			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
-			            </li>
-			            <li class="sliderImage">
-			                <a href=""><img src="_/img/slider-pe/2.jpg" alt="2" /></a>
-			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
-			            </li>
-			            <li class="sliderImage">
-			                <img src="_/img/slider-pe/1.jpg" alt="3" />
-			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
-			            </li>
-			            <li class="sliderImage">
-			                <img src="_/img/slider-pe/2.jpg" alt="4" />
-			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
-			            </li>
-			            <li class="sliderImage">
-			                <img src="_/img/slider-pe/1.jpg" alt="5" />
-			                <span class="bottom"><a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>Comprar</a></span>
-			            </li>
-			            <div class="clear sliderImage"></div>
-			        </ul>
-   					 </div>
+				<div class="slider-wrap">
+		<div id="main-photo-slider" class="csw">
+			<div class="panelContainer">
+				<div class="panel" title="Panel 1">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 2">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/2.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>		
+				<div class="panel" title="Panel 3">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 4">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/2.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 5">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 6">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/2.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 7">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 8">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/2.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="panel" title="Panel 9">
+					<div class="wrapper">
+						<img src="_/img/slider-pe/1.jpg" alt="temp" />
+						<div class="photo-meta-data">
+							<a class="boton" href="cotizacion.html"><img src="_/img/cart-ws.png"/>comprar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#1" class="cross-link active-thumb"><img src="images/tempphoto-1thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a>
+		<div id="movers-row">
+			<div><a href="#2" class="cross-link"><img src="images/tempphoto-2thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#3" class="cross-link"><img src="images/tempphoto-3thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#4" class="cross-link"><img src="images/tempphoto-4thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#5" class="cross-link"><img src="images/tempphoto-5thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#6" class="cross-link"><img src="images/tempphoto-6thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#7" class="cross-link"><img src="images/tempphoto-6thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#8" class="cross-link"><img src="images/tempphoto-6thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+			<div><a href="#9" class="cross-link"><img src="images/tempphoto-6thumb.jpg" class="nav-thumb" alt="temp-thumb" /></a></div>
+		</div>
+
+	</div>
 		</div> <!-- end of #info-wp -->
 	</div><!-- end of #info -->
 
