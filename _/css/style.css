@@ -397,6 +397,10 @@ body {
 #info2  p.giant, #costo  p.giant {
 	font-size: 18px;
 }
+#info2  p.giant{
+	text-align: justify;
+	margin-top: 10px;
+}
 #costo-wp {
 	width: 800px;
 	margin: 0 auto;
@@ -526,28 +530,28 @@ body {
 	position: absolute;
 	}
 #e-circuno {
-	top: 650px;
+	top: 736px;
 }
 #e-circdos {
-	top: 722px;
+	top: 813px;
 }
 #c-circuno {
-	top: 592px;
+	top: 737px;
 }
 #c-circdos {
-	top: 637px;
+	top: 769px;
 }
 #c-circtres {
-	top: 680px;
+	top: 823px;
 }
 #d-circuno {
-	top: 627px;
+	top: 736px;
 }
 #d-circdos {
-	top: 668px;
+	top: 770px;
 }
 #d-circtres {
-	top: 725px;
+	top: 822px;
 }
 	#info-emp li {
 		margin: 5px 0 5px 0;
@@ -656,7 +660,7 @@ body {
 		#info2 #info-wp a.ganga, #costo a.ganga {
 			float: right;
 		}
-		#info2 #info-wp a.ganga, #costo a.ganga, .slider-wrap a.boton {
+		#info2 #info-wp a.ganga, #costo a.ganga {
 			text-transform: uppercase;
 			color: #ffffff;
 			font-family: "gothamBold";
@@ -682,7 +686,10 @@ body {
 			#costo a.ganga{
 				margin-top: 60px;
 			}
-			#info2 #info-wp a.ganga:hover, #costo a.ganga:hover, .slider-wrap a.boton:hover {
+			#costo a.cotizacion{
+				margin-top: 0px;
+			}
+			#info2 #info-wp a.ganga:hover, #costo a.ganga:hover{
 				background: #244d7b; /* Old browsers */
 				background: -moz-linear-gradient(top, #244d7b 0%, #17324f 98%); /* FF3.6+ */
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#244d7b), color-stop(98%,#17324f)); /* Chrome,Safari4+ */
@@ -697,11 +704,43 @@ body {
 			top: 4px;
 			right: 3px;
 		}
+
 		.slider-wrap a.boton {
-			padding: 10px 20px;
-			font: normal 10pt "gothambold";
+			text-transform: uppercase;
+			color: #ffffff;
+			padding: 10px 320px 30px 320px;
+			font: normal 12pt "gothambold";
+			border-style:solid;
+			border-width:5px;
+			border-color:#16294d;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-transition: All 0.5s ease;
+			-moz-transition: All 0.5s ease;
+			-o-transition: All 0.5s ease;
+			-ms-transition: All 0.5s ease;
+			transition: All 0.5s ease;
+			background: #296ce9; /* Old browsers */
+			background: -moz-linear-gradient(top,  #296ce9 0%, #123981 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#296ce9), color-stop(100%,#123981)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #296ce9 0%,#123981 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #296ce9 0%,#123981 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #296ce9 0%,#123981 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #296ce9 0%,#123981 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#296ce9', endColorstr='#123981',GradientType=0 ); /* IE6-9 */
+
 		}
 		
+		.slider-wrap a.boton:hover {
+			background: -moz-linear-gradient(top,  #2c6099 1%, #214d7b 100%, #244d7b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2c6099), color-stop(100%,#214d7b), color-stop(100%,#244d7b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #2c6099 1%,#214d7b 100%,#244d7b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c6099', endColorstr='#244d7b',GradientType=0 );  
+		}
 /* Empresas */
 #costo-wp ul#info-emp li {
 	list-style: disc;
@@ -810,9 +849,11 @@ body {
 	#compramos p {
 	margin: 5px 15px 0 15px;
 	position: relative;
-	bottom: 25px;
+	bottom: 30px;
 }
 	#compramos h2{
+		position: relative;
+		bottom: 20px;
 		text-align: center;
 		margin: 0 15px 0 15px;
 		padding: 15px 15px 15px 15px;
@@ -841,6 +882,7 @@ body {
 		height: 35px;
 		background-color: #333333;
 	}
+
 #calculadora {
 	width: 240px;
 	background-color: #F2F2F2;
@@ -867,7 +909,7 @@ body {
 			margin-right: 3px;
 		}
 		#calculadora #calForm {
-			margin: 10px 0 0 10px;
+			margin: 0px 0 0 10px;
 			text-align: left;
 		}
 			#calculadora .input_calc {
@@ -875,6 +917,16 @@ body {
 				}
 				#calculadora .input_calc:last-child {
 					margin-bottom: -4px;
+					}
+					#calculadora .cantidad {
+						float: right;
+						margin-right: 35px;
+					}
+					#calculadora .costos {
+						float: left;
+					}
+					#calculadora .city {
+						clear: both;
 					}
 			#calculadora label.labels {
 				color: #282828;
@@ -888,17 +940,17 @@ body {
 				margin: 0px 5px;
 				}
 			#calculadora input#costos, input#ciudad {
-				width: 200px;
+				width: 100px;
 			}
 		#total-div {
-			height: 30px;
+			height: 27px;
 			background-color: #3F66AF;
 			overflow: hidden;
-			padding: 10px 10px 0px 10px;
+			padding: 5px 10px 0px 10px;
 		}
 		#total-div img {
 			float: left;
-			margin-right: 8px;
+			margin-right: 5px;
 		}
 		#total-div h1 {
 			font: normal 12pt "gothambold";
@@ -927,6 +979,25 @@ body {
 #example_video_1 {
 	float: right;
 	margin: 15px 20px 0 0;
+}
+#slider #forma {
+	width: 325px;
+	float: right;
+	margin-top: 100px;
+}
+#slider #forma label {
+	font: normal 12pt "gothambold";
+			text-transform: uppercase;
+			color: white;
+}
+#slider #forma input#rname,#slider #forma input#remail, #slider #forma input#rpass {
+	width: 250px;
+	border-radius: 5px;
+	padding-left: 5px;
+	height: 20px;
+}
+#slider #bEnviar {
+	margin-top: 10px;
 }
 /*PROMO EXPRESS*/
 #info3 {

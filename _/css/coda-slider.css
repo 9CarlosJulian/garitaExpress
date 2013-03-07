@@ -78,7 +78,7 @@ css-tricks.com/musings-on-preprocessing/
     *
     *******************************************************/ 
     position: absolute;
-    top: 260px;
+    top: 310px;
     left: 30px;
   }
     
@@ -283,6 +283,11 @@ css-tricks.com/musings-on-preprocessing/
         display: block;
         float: left; 
       }
+       .coda-slider-wrapper .coda-slider .panel-container .panel #registrate {
+         background: url(../img/registrate.jpg);
+         height: 350px;
+         width: 960px;
+       }
   
   .coda-slider-wrapper .coda-nav {
     /************************************************

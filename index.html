@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="_/img/touch-icon-iphone4.png" />
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
-	<link rel="stylesheet" type="text/css" media="screen" href="_/css/coda-slider.css">
+	<link rel="stylesheet" href="_/css/style.css" type="text/css"/>	<link rel="stylesheet" type="text/css" media="screen" href="_/css/coda-slider.css">
 	<link href="_/css/video-js.css" rel="stylesheet" type="text/css">
 
 	<!-- PNG FIX for IE6 -->
@@ -197,11 +197,40 @@
 	<div class="coda-slider"  id="slider-id">
 	      <div>
 	        <h2 class="title"></h2>
-	        <img src="_/img/slide-1.png" alt=""/>
+	        <img src="_/img/comprafacil.jpg" alt=""/>
 	      </div>
 	      <div>
 	        <h2 class="title"></h2>
-	        <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+	        <img src="_/img/border.jpg" alt=""/>
+	      </div>
+	       <div>
+	        <h2 class="title"></h2>
+	        <img src="_/img/enviamos.jpg" alt=""/>
+	      </div>
+	      <div>
+	        <h2 class="title"></h2>
+	        <img src="_/img/compramos.jpg" alt=""/>
+	      </div>
+	       <div>
+		        <div id="registrate">
+		        	<h2 class="title"></h2>
+				        <div id="forma">
+				        	<form action="mail.php" id="contactform" method="POST">
+			                    <label class="labels" for="name">Nombre<span>*</span> </label><br>
+			                   	<input id="rname" name="name" placeholder="Tu Nombre" required="" type="text"><br>
+			                    <div id="contactform_name_errorloc" class="error"></div>
+			                    <label for="email">Correo<span>*</span> </label><br>
+			                    <input id="remail" name="email" placeholder="tu@correo.com" required="" type="email"><br>
+			                    <label for="password">Password<span>*</span> </label><br>
+			                    <input id="rpass" name="pass"  required="" type="password"><br>
+								<input id="bEnviar" name="send" value="Cotiza" type="submit">
+	                        </form>
+	                   </div>
+	            </div>
+	      </div>
+	       <div>
+	        <h2 class="title"></h2>
+	        <img src="_/img/sale.jpg" alt=""/>
 	      </div>
 	      <div>
 	        <h2 class="title"></h2>
@@ -230,15 +259,15 @@
 					<li>Realizamos la compra</li>
 					<li>Recibe en tu hogar</li>
 				</ul>
-				<p>Bacon ipsum dolor sit amet cow frankfurter pork loin pig jerky doner beef ham hock porkz chop.</p>
+				<p>Bacon ipsum dolor sit amet cow frankfurter pork loin pig jerky doner beef ham hock porkz chop.pig jerky doner beef ham hock porkz cho frankfurter pork loin.</p>
 				<h2>Registrate Es totalmente Gratis</h2>
-				<a>
 			</div> <!-- end of #compramos -->
 			<div id="ganga-dia">
 				<div id="tit-ganga">
 					<h1>Ganga del dia</h1>
 					<img src="_/img/tag-g.png" alt=""/>
 				</div> <!-- end of #tit-ganga -->
+				<img src="_/img/iphone-dia.jpg" alt=""/>
 			</div><!-- end of #ganga-dia -->
 			<div id="calculadora">
 				<div id="tit-calc">
@@ -246,12 +275,30 @@
 					<img src="_/img/cal-g.png" alt=""/>
 				</div> <!-- end of #tit-ganga -->
 				<form action="" id="calForm">
-					<div class="input_calc">
+				
+					<div class="input_calc costos">
 						<label class="labels" for="costo"> Costo</label><br>
 						<input type="text"  name="costo" id="costos"/>
 					</div>
+						<div class="input_calc cantidad">
+					    <label class="labels" for="cantidad">Cantidad</label><br>
+					   	<select name="delivery">
+							<option selected="selected" value="uno" data-cost="0">1</option>
+							<option value="dos" data-cost="1.00">2</option>
+							<option value="tres" data-cost="2.50">3</option>
+							<option value="cuatro" data-cost="2.50">4</option>
+							<option value="cinco" data-cost="2.50">5</option>
+						</select>
+				    </div>
+					 <div class="input_calc city">
+					   	<label class="labels" for="ciudad">Ciudad</label><br>
+					   	<input type="radio" name="ciudad" value="tijuana" />
+					   	<label class="respuesta" for="ciudad">Tijuana y BC</label>
+					   	<input type="radio" name="ciudad" value="resto" />
+					   	<label class="respuesta" for="ciudad">Resto del País</label>
+				   	</div>	
 					<div class="input_calc">
-						<label class="labels" for="peso">Peso</label><br>
+						<label class="labels" for="peso">Peso Total</label><br>
 					    <input type="radio"   name="peso" value="ligero" />
 					    <label class="respuesta" for="peso"><img src="_/img/chico.png" alt=""/></label>
 					    <input type="radio"  name="peso" value="medio" />
@@ -260,7 +307,7 @@
 					    <label class="respuesta" for="peso"><img src="_/img/grande.png" alt=""/></label>
 					</div>
 					<div class="input_calc">
-					    <label class="labels" for="tamano">Tamano</label><br>
+					    <label class="labels" for="tamano">Tamaño Total</label><br>
 					   	<input type="radio" name="tamano" value="chico" />
 					   	<label class="respuesta" for="tamano">Chico</label>
 					    <input type="radio"  name="tamano" value="mediano" />
@@ -268,13 +315,6 @@
 					    <input type="radio" name="tamano" value="grande" />
 					    <label class="respuesta" for="tamano">Grande</label>
 				    </div>
-				    <div class="input_calc">
-					   	<label class="labels" for="ciudad">Ciudad</label><br>
-					   	<input type="radio" name="ciudad" value="tijuana" />
-					   	<label class="respuesta" for="ciudad">Tijuana y BC</label>
-					   	<input type="radio" name="ciudad" value="resto" />
-					   	<label class="respuesta" for="ciudad">Resto del País</label>
-				   	</div>
 				   	<div class="input_calc">
 					   	<label class="labels" for="cambio">Tipo de cambio</label><br>
 					     <input type="radio" name="moneda"  value="dolares" checked/>
@@ -283,7 +323,7 @@
 					    <label class="respuesta" for="cambio">Pesos</label>
 				    </div>
 				</form> ​
-				<div id="total-div"><img src="_/img/cart-w.png" alt=""/><h1>Total</h1><div id="totals"></div></div>
+				<div id="total-div"><img src="_/img/cart-ws.png" alt=""/><h1>Total</h1><div id="totals"></div></div>
 			</div><!-- end of #calculadora -->
 		</div><!-- end of #info-wp -->
 	</div><!-- end of #info -->
