@@ -14,24 +14,39 @@
 	<link rel="stylesheet" href="_/css/main.css" type="text/css"/>
 </head>
 <body>
+
 <div id="top">
-	<div id="top-wp">
+	<div id="top-wp" class="wp">
 		<ul>
 			<li><a href="http://www.multipack.com.mx/">Rastrea tu compra</a></li>
 			<li><a href="#">Contacto</a></li>
-			<li class="registrate"><a href="#">Registrate</a></li>
+			<li id="toggle" class="registrate">
+				<a id="open" class="open" href="#">¡Registrate!</a>
+				<a id="close" style="display: none;" class="close" href="#">Cerrar</a>			
+			</li>
+			<!--<li class="registrate"><a href="#">Registrate</a></li>-->
 		</ul>
-	</div>
-</div>
+	</div><!-- end of #top-wp -->
+</div><!-- end of #top -->
 <div id="header">
-	<div id="header-wp">
+	<div id="header-wp" class="wp">
 		<a href="index.html" class="logo">GaritaExpress</a>
-		<ul>
-			<li><img src="_/img/tel.png"/></li>
-			<li><a href="tel:6646811490" class="tel">01 (664) 681-1490</a></li>
+		<ul id="tels">
+			<li>
+				<ul class="numero">
+					<li><img src="_/img/tel.png" alt=""/></li>
+					<li><a href="tel:6646811490" class="tel">01 (664) 681-1490</a></li>
+				</ul>
+			</li>
+			<li>
+				<ul class="numero">
+					<li><img src="_/img/nex.png" alt=""/></li>
+					<li><a href="" class="tel">152*15*30839</a></li>
+				</ul>
+			</li>
 		</ul>
-	</div>
-</div>
+	</div> <!-- end of #headerners-wp -->
+</div><!-- end of #header -->
 <div id="menu">
 	<ul id="menu-wp">
 		    <li><a href="#" class="drop">Servicios</a><!-- Begin 3 columns Item -->
@@ -39,15 +54,8 @@
 	            <div class="col_1">
 	            	<a href="compras.html">
 		                <h1>Compramos por ti</h1> 
-		                <div class="temp_icon" ><img src="_/img/compramos.png" alt=""/></div>
+		                <div class="temp_icon" ><img src="_/img/lap.png" alt=""/></div>
 		                <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
-	            	</a>
-	            </div>
-	            <div class="col_1">
-	            	<a href="envios.html">
-	                     <h1>Paquetería y Mensajería</h1> 
-	                    <div class="temp_icon" style="height:90px;"><img src="_/img/box2.png" alt=""/></div>
-	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
@@ -58,6 +66,14 @@
 	            	</a>
 	            </div>
 	            <div class="col_1">
+	            	<a href="envios.html">
+	                     <h1>Paquetería y Mensajería</h1> 
+	                    <div class="temp_icon" style="height:100px;"><img src="_/img/box3.png" alt=""/></div>
+	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
+	            	</a>
+	            </div>
+	          
+	            <div class="col_1">
 	            	<a href="empresas.html">
 	                    <h1>Empresas</h1> 
 	                    <div class="temp_icon"><img src="_/img/fabrica.png" alt=""/></div>
@@ -66,37 +82,30 @@
 	            </div>
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
-	    <li><a href="#" class="drop">Cómo funciona</a><!-- Begin 3 columns Item -->
-	        <div class="dropdown_3columns"><!-- Begin 3 columns container -->
+	    <li><a href="#" class="drop">Promociones</a><!-- Begin 3 columns Item -->
+	        <div class="dropdown_2columns"><!-- Begin 3 columns container -->
 	            <div class="col_1">
-	            	<a href="pagosyenvios.html">
-	                    <h1>Pagos y Envíos</h1> 
-	                    <div class="temp_icon"><img src="_/img/camion-e.png" alt=""/></div>
+	            	<a href="gangaexp.html">
+	                    <h1>Ganga Express</h1> 
+	                    <div class="temp_icon"><img src="_/img/reloj.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
-	            	<a href="faq.html">
-	                    <h1>Preguntas</h1> 
-	                    <div class="temp_icon"><img src="_/img/preguntas.png" alt=""/></div>
+	            	<a href="promoexp.html">
+	                    <h1>Promo Express</h1> 
+	                    <div class="temp_icon"><img src="_/img/cel.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
-	            <div class="col_1">
-	            	<a href="testimonios.html">
-	                    <h1>Testimonios</h1> 
-	                    <div class="temp_icon"><img src="_/img/review.png" alt=""/></div>
-	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
-	            	</a>
-	            </div>	        
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
 	    <li><a href="#" class="drop">Tiendas</a><!-- Begin 3 columns Item -->
 	        <div class="dropdown_3columns align_right"><!-- Begin 3 columns container -->
 	         <div class="col_1">
 	            	<a href="ofertas.html">
-	                    <h1>Ofertas</h1> 
-	                    <div class="temp_icon"><img src="_/img/billete.png" alt=""/></div>
+	                    <h1>¡Ofertas!</h1> 
+	                    <div class="temp_icon"><img src="_/img/tag-m.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
@@ -116,25 +125,34 @@
 	            </div>	        
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
-	    <li><a href="#" class="drop">Promociones</a><!-- Begin 3 columns Item -->
-	        <div class="dropdown_2columns"><!-- Begin 3 columns container -->
+	    <li><a href="#" class="drop">¿Preguntas?</a><!-- Begin 3 columns Item -->
+	        <div class="dropdown_3columns"><!-- Begin 3 columns container -->
 	            <div class="col_1">
-	            	<a href="gangaexp.html">
-	                    <h1>Ganga Express</h1> 
-	                    <div class="temp_icon"><img src="_/img/reloj.png" alt=""/></div>
+	            	<a href="pagosyenvios.html">
+	                    <h1>Pagos y Envíos</h1> 
+	                    <div class="temp_icon"><img src="_/img/tarjeta.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
 	            <div class="col_1">
-	            	<a href="promoexp.html">
-	                    <h1>Promo Express</h1> 
-	                    <div class="temp_icon"><img src="_/img/tag-m.png" alt=""/></div>
+	            	<a href="faq.html">
+	                    <h1>Preguntas</h1> 
+	                    <div class="temp_icon"><img src="_/img/preguntas.png" alt=""/></div>
 	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
 	            	</a>
 	            </div>
+	            <div class="col_1">
+	            	<a href="testimonios.html">
+	                    <h1>Testimonios</h1> 
+	                    <div class="temp_icon"><img src="_/img/review.png" alt=""/></div>
+	                    <p>Bacon ipsum dolor sit amet jerky tenderloin bresaola salami. Leberkas brisket chuck, tongue strip steak doner filet mignon </p>
+	            	</a>
+	            </div>	        
 	    	</div><!-- End 3 columns container -->
 	    </li><!-- End 3 columns Item -->
-	    <li class="menu"><a href="cotizacion.html" class="drop">Cotizaciones</a><!-- Begin 3 columns Item -->
+	   
+	   
+	    <li class="menu"><a href="cotizacion.html" class="drop">¡Cotizaciones!</a><!-- Begin 3 columns Item -->
 	    </li><!-- End 3 columns Item -->
 	</ul>
 </div><!-- end of #menu -->

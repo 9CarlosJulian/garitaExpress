@@ -44,7 +44,7 @@ blockquote									{ padding: 0 20px; margin-left: 20px; border-left: 20px solid
 .stripNavL, .stripNavR, .stripNav			{ display: none; }
 .nav-thumb 									{ border: 1px solid black; margin-right: 5px; }
 #movers-row									{ margin: -45px 0 0 62px; }
-#movers-row div								{ width: 12.5%; float: left; }
+#movers-row div								{ width: 11.21%; float: left; }
 #movers-row div a.cross-link 				{ float: right; }
 .photo-meta-data							{ background: url(../transpBlack.png); padding: 10px; height: 30px; 
 											  margin-top: -50px; position: relative; z-index: 9999; color: white; }
